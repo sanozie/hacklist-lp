@@ -1,0 +1,45 @@
+h1{
+    font-size: 80px;
+    color: white;
+    margin-left: 100px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h4{
+    color: white;
+    margin-left: 100px;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 600px;
+    background-color: darkcyan;
+    width: 100%;
+  /**  background-image: url('img/headerImage.jpg'); **/
+}
+
+.secondDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    height: 600px;
+
+
+}
+
+.secondcol1{
+    flex: 2;
+    text-align: right;
+    
+}
+
+.secondcol2{
+    flex: 3;
+    text-align: right;
+}
