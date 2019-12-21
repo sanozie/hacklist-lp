@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="175.438" height="259.559" viewBox="0 0 175.438 259.559">
+  <defs>
+    <filter id="Icon_open-lightbulb" x="0" y="0" width="175.438" height="259.559" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Icon_open-lightbulb)">
+    <path id="Icon_open-lightbulb-2" data-name="Icon open-lightbulb" d="M99.608.187a14.322,14.322,0,0,0-3.724,1.719L9.952,44.872a14.322,14.322,0,1,0,12.6,25.207l85.932-42.966A14.322,14.322,0,0,0,99.608.187Zm28.644,42.966a14.322,14.322,0,0,0-3.724,1.719L9.952,102.16a14.322,14.322,0,1,0,12.6,25.207L137.132,70.078a14.322,14.322,0,0,0-8.88-26.925Zm0,57.288a14.323,14.323,0,0,0-3.724,1.719L38.6,145.126a14.322,14.322,0,0,0,6.3,26.925h57.288a14.5,14.5,0,0,0,4.583-28.644l30.363-16.041a14.322,14.322,0,0,0-8.88-26.925ZM54.923,200.7a14.5,14.5,0,0,0,4.583,28.644H88.151a14.322,14.322,0,0,0,0-28.644H59.506a14.326,14.326,0,0,0-2.578,0,14.314,14.314,0,0,0-1.719,0Z" transform="translate(15.36 10.03)" fill="#fff"/>
+  </g>
+</svg>

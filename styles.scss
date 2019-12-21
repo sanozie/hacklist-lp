@@ -1,0 +1,42 @@
+//Misc
+.container-fluid {
+     padding: 0;
+}
+
+//Mixins
+@mixin center {
+     margin: auto;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+@mixin poster {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+}
+.center-container {
+     @include center;
+}
+.poster {
+     @include poster;
+}
+
+//Main Divs
+#hack-nights {
+     background-color: #2B2B2B;
+}
+//Items
+#hero-text-container {
+     width: 100vw;
+     height: 100vh;
+     top: 0;
+}
+#project-text-container {
+     bottom: 0;
+     width: 100vw;
+     //Needs fix to be responsive
+          height: 120vh;
+}
