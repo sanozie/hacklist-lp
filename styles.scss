@@ -1,3 +1,9 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+$primaryFont: 'Anton', sans-serif;
+$subFont: 'Raleway', sans-serif;
+
 //Misc
 .container-fluid {
      padding: 0;
@@ -33,6 +39,14 @@
      width: 100vw;
      height: 100vh;
      top: 0;
+     color: white;
+     .col-6 {
+          padding: 15px;
+     }
+     h1 {
+          font-size: calc(1rem + 5vw);
+          letter-spacing: calc(0.05rem + 0.1vw);
+     }
 }
 #project-text-container {
      bottom: 0;
@@ -40,3 +54,12 @@
      //Needs fix to be responsive
           height: 120vh;
 }
+
+//Text
+h1, h2, h3, h4, h5, h6 {
+     font-family: $primaryFont;
+}
+p {
+     font-family: $subFont;
+}
+

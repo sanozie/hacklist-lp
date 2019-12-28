@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 .container-fluid {
   padding: 0;
 }
@@ -25,12 +27,28 @@
   width: 100vw;
   height: 100vh;
   top: 0;
+  color: white;
+}
+#hero-text-container .col-6 {
+  padding: 15px;
+}
+#hero-text-container h1 {
+  font-size: calc(1rem + 5vw);
+  letter-spacing: calc(0.05rem + 0.1vw);
 }
 
 #project-text-container {
   bottom: 0;
   width: 100vw;
   height: 120vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Anton", sans-serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

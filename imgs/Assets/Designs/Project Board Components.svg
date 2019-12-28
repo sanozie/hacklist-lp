@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1499.285" height="1833.577" viewBox="0 0 1499.285 1833.577">
+  <g id="Project_Board_Components" data-name="Project Board Components" transform="translate(586.943 -3384.931) rotate(9)" opacity="0.89" style="isolation: isolate">
+    <g id="DIYHacks_Component" data-name="DIYHacks Component" transform="matrix(0.829, -0.559, 0.559, 0.829, 109.162, 4040.426)">
+      <g id="Hack" transform="translate(0 0)">
+        <g id="Group_4" data-name="Group 4">
+          <g id="Group_1" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="DIYHacks" transform="translate(44.539 88.632)" fill="#2b2b2b" font-size="59" font-family="Impact"><tspan x="0" y="0">DIYHacks</tspan></text>
+          <g id="Group_2" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-2" data-name="Rectangle 1" d="M0,0H403.236V93.879a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,93.879Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="A_website_for_university_students_to_host_their_own_hackathon_for_any_kind_of_project._" data-name="A website for university students to host their own hackathon for  any kind of project. " transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">A website for university students </tspan><tspan x="0" y="21" xml:space="preserve">to host their own hackathon for  </tspan><tspan x="0" y="42">any kind of project. </tspan></text>
+          <g id="Group_3" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group" transform="translate(12.56 15.111)">
+              <text id="Sep._" data-name="Sep. " transform="translate(1.692 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Sep. </tspan></text>
+              <text id="_21-22" data-name="21-22" transform="translate(0 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">21-22</tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De..." data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="Northwest_4.416" data-name="Northwest 4.416" transform="translate(44.887 147.868)" fill="#2b2b2b" font-size="24" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">Northwest 4.416</tspan></text>
+        </g>
+        <rect id="Rectangle_5" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="Web_Skill" data-name="Web Skill" transform="translate(304.585 46.765)">
+        <path id="Icon_material-desktop-windows" data-name="Icon material-desktop-windows" d="M48.706,0H4.871A4.878,4.878,0,0,0,0,4.856V33.993a4.878,4.878,0,0,0,4.871,4.856H21.917v4.856h-4.87v4.856H36.533V43.7H31.658V38.848H48.706a4.878,4.878,0,0,0,4.871-4.856V4.856A4.878,4.878,0,0,0,48.706,0ZM48.706,33.993Z" transform="translate(0 0)" fill="#2b2b2b"/>
+      </g>
+    </g>
+    <g id="Foodie_Component" data-name="Foodie Component" transform="matrix(0.829, -0.559, 0.559, 0.829, 474.88, 4260.327)">
+      <g id="Hack-2" data-name="Hack" transform="translate(0 0)">
+        <g id="Group_4-2" data-name="Group 4">
+          <g id="Group_1-2" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-3" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" transform="translate(0)" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="Foodie_App" data-name="Foodie App" transform="translate(44.539 88.79)" fill="#2b2b2b" font-size="53" font-family="Impact"><tspan x="0" y="0">Foodie App</tspan></text>
+          <g id="Group_2-2" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-4" data-name="Rectangle 1" d="M0,0H403.236V313.809a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,313.809Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="Develop_an_app_that_allows_users_to_weigh_in_on_the_quality_of_on-campus_food_for_the_day._Sometimes_the_food_can_be_great_sometimes_it_can_be_not_gr" data-name="Develop an app that allows users to weigh in on the quality of on-campus food for the day. Sometimes the food can be great, sometimes it can be not gr" transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Develop an app that allows </tspan><tspan x="0" y="21">users to weigh in on the quality </tspan><tspan x="0" y="42">of on-campus food for the day. </tspan><tspan x="0" y="63">Sometimes the food can be </tspan><tspan x="0" y="84">great, sometimes it can be not </tspan><tspan x="0" y="105">great. Help out fellow students </tspan><tspan x="0" y="126">by leaving short ratings of the </tspan><tspan x="0" y="147">food quality per day, then </tspan><tspan x="0" y="168">display these quality ratings on </tspan><tspan x="0" y="189">the app for all to see when they </tspan><tspan x="0" y="210">are planning which restaurant to </tspan><tspan x="0" y="231">go to.</tspan></text>
+          <g id="Group_3-2" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-2" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-2" data-name="Group" transform="translate(16.988 15.111)">
+              <text id="Dec._" data-name="Dec. " transform="translate(0 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Dec. </tspan></text>
+              <text id="_1-2" data-name="1-2" transform="translate(8.831 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">1-2</tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Samuel_Anozie." data-name="Hosted By: Samuel Anozie." transform="translate(47.72 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Samuel Anozie.</tspan></text>
+          <text id="CB3_2.02" data-name="CB3 2.02" transform="translate(45.146 147.835)" fill="#2b2b2b" font-size="24" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">CB3 2.02</tspan></text>
+        </g>
+        <rect id="Rectangle_5-2" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-2" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="App_Dev_Skill" data-name="App Dev Skill" transform="translate(317.618 30.915)">
+        <g id="Icon_feather-smartphone" data-name="Icon feather-smartphone" transform="translate(0 0)">
+          <path id="Path_1" data-name="Path 1" d="M6.725,0H40.347a6.713,6.713,0,0,1,6.725,6.7V60.315a6.713,6.713,0,0,1-6.725,6.7H6.725A6.713,6.713,0,0,1,0,60.316V6.7A6.713,6.713,0,0,1,6.725,0Z" fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+          <path id="Path_2" data-name="Path 2" d="M0,0H0" transform="translate(23.536 53.614)" fill="none" stroke="#2b2b2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+        </g>
+      </g>
+    </g>
+    <g id="QRCode_Component" data-name="QRCode Component" transform="matrix(0.829, -0.559, 0.559, 0.829, 1066.8, 4344.057)">
+      <g id="Hack-3" data-name="Hack" transform="translate(0 0)">
+        <g id="Group_4-3" data-name="Group 4">
+          <g id="Group_1-3" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-5" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="QRcode_Receipts" data-name="QRcode Receipts" transform="translate(44.539 88.878)" fill="#2b2b2b" font-size="34" font-family="Impact"><tspan x="0" y="0">QRcode Receipts</tspan></text>
+          <g id="Group_2-3" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-6" data-name="Rectangle 1" d="M0,0H403.236V159.892a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,159.892Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="Instead_of_wasting_paper_on_receipts_and_sending_them_to_an_email_where_they_might_get_lost_make_an_app_that_will_scan_receipts_via_QR_Code_and_store" data-name="Instead of wasting paper on receipts and sending them to an email where they might get lost, make an app that will scan receipts via QR Code and store" transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Instead of wasting paper on </tspan><tspan x="0" y="21">receipts and sending them to an </tspan><tspan x="0" y="42">email where they might get lost, </tspan><tspan x="0" y="63">make an app that will scan </tspan><tspan x="0" y="84">receipts via QR Code and store </tspan><tspan x="0" y="105">them.</tspan></text>
+          <g id="Group_3-3" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-3" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-3" data-name="Group" transform="translate(13.145 15.111)">
+              <text id="May._" data-name="May. " transform="translate(0 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">May. </tspan></text>
+              <text id="_1-22" data-name="1-22" transform="translate(6.045 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">1-22</tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De...-2" data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="ECSW_2.202" data-name="ECSW 2.202" transform="translate(40.29 152.328)" fill="#2b2b2b" font-size="24" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">ECSW 2.202</tspan></text>
+        </g>
+        <rect id="Rectangle_5-3" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-3" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="computing-cloud" transform="translate(309.916 61.298)">
+        <path id="Subtraction_18" data-name="Subtraction 18" d="M42.254,28.727H10.144a10.138,10.138,0,1,1,0-20.276h.01a10.035,10.035,0,0,1,1.231.08A14.36,14.36,0,0,1,24.5,0c.436,0,.875.02,1.313.06A14.357,14.357,0,0,1,38.473,11c.12-.008.26-.017.4-.017A5.067,5.067,0,0,1,43.9,15.412a6.76,6.76,0,0,1-1.643,13.315Zm-9.3-10.772a3.379,3.379,0,1,0,3.379,3.379A3.379,3.379,0,0,0,32.956,17.955Zm-16.9,0a3.379,3.379,0,1,0,3.379,3.379A3.379,3.379,0,0,0,16.058,17.955Zm5.059-2.525a.841.841,0,0,0-.587.239l-1.69,1.69a.845.845,0,1,0,1.193,1.193l1.692-1.69a.849.849,0,0,0-.01-1.184.839.839,0,0,0-.6-.247Zm6.779,0a.84.84,0,0,0-.6.247.849.849,0,0,0-.014,1.184l1.69,1.69a.845.845,0,0,0,1.193-1.193l-1.685-1.69a.841.841,0,0,0-.587-.239Zm-3.39-5.924a3.379,3.379,0,1,0,3.379,3.379,3.379,3.379,0,0,0-3.379-3.379Zm8.449,13.521a1.689,1.689,0,1,1,1.193-.495,1.689,1.689,0,0,1-1.193.495Zm-16.9,0a1.69,1.69,0,1,1,1.193-.495,1.69,1.69,0,0,1-1.193.495Zm8.449-8.45a1.69,1.69,0,1,1,1.193-.495A1.69,1.69,0,0,1,24.507,14.575Z" transform="translate(0 0)"/>
+      </g>
+    </g>
+    <g id="Gradient_Component" data-name="Gradient Component" transform="matrix(0.829, -0.559, 0.559, 0.829, 470.612, 3783.765)">
+      <g id="Hack-4" data-name="Hack" transform="translate(0 0)">
+        <g id="Group_4-4" data-name="Group 4">
+          <g id="Group_1-4" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-7" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="GRADIENT_GEN" data-name="GRADIENT GEN" transform="translate(44.539 88.13)" fill="#2b2b2b" font-size="42" font-family="Impact"><tspan x="0" y="0">GRADIENT GEN</tspan></text>
+          <g id="Group_2-4" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-8" data-name="Rectangle 1" d="M0,0H403.236V115.353a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,115.353Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="Develop_a_site_that_can_create_unconventional_gradients_with_different_shapes_and_save_as_a_CSS3_background_image._" data-name="Develop a site that can create unconventional gradients with different shapes, and save as a CSS3 background image. " transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Develop a site that can create </tspan><tspan x="0" y="21">unconventional gradients with </tspan><tspan x="0" y="42">different shapes, and save as a </tspan><tspan x="0" y="63">CSS3 background image.</tspan></text>
+          <g id="Group_3-4" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-4" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-4" data-name="Group" transform="translate(12.56 15.111)">
+              <text id="Sep._2" data-name="Sep. " transform="translate(1.692 22)" fill="#fffffe" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Sep. </tspan></text>
+              <text id="_21-22-2" data-name="21-22" transform="translate(0 51.428)" fill="#fffffe" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">21-22</tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De...-3" data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="Northwest_4.416-2" data-name="Northwest 4.416" transform="translate(44.887 147.868)" fill="#2b2b2b" font-size="24" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">Northwest 4.416</tspan></text>
+        </g>
+        <rect id="Rectangle_5-4" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-4" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="Open_Source_SKill" data-name="Open Source SKill" transform="translate(312.835 52.71)">
+        <g id="Group_8" data-name="Group 8" transform="translate(0 0)">
+          <path id="Path_3" data-name="Path 3" d="M22.8,0A22.732,22.732,0,0,0,14.627,43.97a1.405,1.405,0,0,0,1.129-.049,1.432,1.432,0,0,0,.738-.857l4.275-13.626a1.419,1.419,0,0,0-.67-1.67,5.7,5.7,0,1,1,5.4,0,1.416,1.416,0,0,0-.67,1.67L29.11,43.068a1.432,1.432,0,0,0,.738.857,1.448,1.448,0,0,0,.621.142,1.418,1.418,0,0,0,.508-.094A22.734,22.734,0,0,0,22.8,0Z"/>
+        </g>
+      </g>
+    </g>
+    <g id="Component_8_7" data-name="Component 8 – 7" transform="matrix(0.829, -0.559, 0.559, 0.829, 845.868, 4004.322)">
+      <g id="Hack-5" data-name="Hack" transform="translate(0 0)">
+        <g id="Group_4-5" data-name="Group 4">
+          <g id="Group_1-5" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-9" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="YOUR_IDEA_HERE" data-name="YOUR IDEA HERE" transform="translate(44.539 88.902)" fill="#2b2b2b" font-size="38" font-family="Impact"><tspan x="0" y="0">YOUR IDEA HERE</tspan></text>
+          <g id="Group_2-5" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-10" data-name="Rectangle 1" d="M0,0H403.236V115.353a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,115.353Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore…" transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="21">consetetur sadipscing elitr, sed </tspan><tspan x="0" y="42">diam nonumy eirmod tempor </tspan><tspan x="0" y="63">invidunt ut labore et dolore…</tspan></text>
+          <g id="Group_3-5" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-5" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-5" data-name="Group" transform="translate(16.25 15.111)">
+              <text id="Your_" data-name="Your " transform="translate(0 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Your </tspan></text>
+              <text id="time_" data-name="time " transform="translate(0.496 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">time </tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De...-4" data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="Any_location_on_campus" data-name="Any location on campus" transform="translate(46.248 147.821)" fill="#2b2b2b" font-size="16" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">Any location on campus</tspan></text>
+        </g>
+        <rect id="Rectangle_5-5" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-5" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="Open_Source_SKill-2" data-name="Open Source SKill" transform="translate(312.835 52.71)">
+        <g id="Group_8-2" data-name="Group 8" transform="translate(0 0)">
+          <path id="Path_3-2" data-name="Path 3" d="M22.8,0A22.732,22.732,0,0,0,14.627,43.97a1.405,1.405,0,0,0,1.129-.049,1.432,1.432,0,0,0,.738-.857l4.275-13.626a1.419,1.419,0,0,0-.67-1.67,5.7,5.7,0,1,1,5.4,0,1.416,1.416,0,0,0-.67,1.67L29.11,43.068a1.432,1.432,0,0,0,.738.857,1.448,1.448,0,0,0,.621.142,1.418,1.418,0,0,0,.508-.094A22.734,22.734,0,0,0,22.8,0Z"/>
+        </g>
+      </g>
+      <g id="Hack-6" data-name="Hack" transform="translate(-420.461 -783.058)">
+        <g id="Group_4-6" data-name="Group 4">
+          <g id="Group_1-6" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-11" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="YOUR_IDEA_HERE-2" data-name="YOUR IDEA HERE" transform="translate(44.539 88.902)" fill="#2b2b2b" font-size="38" font-family="Impact"><tspan x="0" y="0">YOUR IDEA HERE</tspan></text>
+          <g id="Group_2-6" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-12" data-name="Rectangle 1" d="M0,0H403.236V115.353a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,115.353Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_2" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore…" transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="21">consetetur sadipscing elitr, sed </tspan><tspan x="0" y="42">diam nonumy eirmod tempor </tspan><tspan x="0" y="63">invidunt ut labore et dolore…</tspan></text>
+          <g id="Group_3-6" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-6" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-6" data-name="Group" transform="translate(16.25 15.111)">
+              <text id="Your_2" data-name="Your " transform="translate(0 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Your </tspan></text>
+              <text id="time_2" data-name="time " transform="translate(0.496 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">time </tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De...-5" data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="Any_location_on_campus-2" data-name="Any location on campus" transform="translate(46.248 147.821)" fill="#2b2b2b" font-size="16" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">Any location on campus</tspan></text>
+        </g>
+        <rect id="Rectangle_5-6" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-6" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+    </g>
+    <g id="Component_8_8" data-name="Component 8 – 8" transform="matrix(0.829, -0.559, 0.559, 0.829, 126.067, 4547.964)">
+      <g id="Hack-7" data-name="Hack" transform="translate(0 0)">
+        <g id="Group_4-7" data-name="Group 4">
+          <g id="Group_1-7" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-13" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="YOUR_IDEA_HERE-3" data-name="YOUR IDEA HERE" transform="translate(44.539 88.902)" fill="#2b2b2b" font-size="38" font-family="Impact"><tspan x="0" y="0">YOUR IDEA HERE</tspan></text>
+          <g id="Group_2-7" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-14" data-name="Rectangle 1" d="M0,0H403.236V115.353a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,115.353Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_3" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore…" transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="21">consetetur sadipscing elitr, sed </tspan><tspan x="0" y="42">diam nonumy eirmod tempor </tspan><tspan x="0" y="63">invidunt ut labore et dolore…</tspan></text>
+          <g id="Group_3-7" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-7" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-7" data-name="Group" transform="translate(16.25 15.111)">
+              <text id="Your_3" data-name="Your " transform="translate(0 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Your </tspan></text>
+              <text id="time_3" data-name="time " transform="translate(0.496 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">time </tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De...-6" data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="Any_location_on_campus-3" data-name="Any location on campus" transform="translate(46.248 147.821)" fill="#2b2b2b" font-size="16" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">Any location on campus</tspan></text>
+        </g>
+        <rect id="Rectangle_5-7" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-7" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="Open_Source_SKill-3" data-name="Open Source SKill" transform="translate(312.835 52.71)">
+        <g id="Group_8-3" data-name="Group 8" transform="translate(0 0)">
+          <path id="Path_3-3" data-name="Path 3" d="M22.8,0A22.732,22.732,0,0,0,14.627,43.97a1.405,1.405,0,0,0,1.129-.049,1.432,1.432,0,0,0,.738-.857l4.275-13.626a1.419,1.419,0,0,0-.67-1.67,5.7,5.7,0,1,1,5.4,0,1.416,1.416,0,0,0-.67,1.67L29.11,43.068a1.432,1.432,0,0,0,.738.857,1.448,1.448,0,0,0,.621.142,1.418,1.418,0,0,0,.508-.094A22.734,22.734,0,0,0,22.8,0Z"/>
+        </g>
+      </g>
+    </g>
+    <g id="Component_8_7-2" data-name="Component 8 – 7" transform="matrix(0.829, -0.559, 0.559, 0.829, 354.855, 4893.076)">
+      <g id="Hack-8" data-name="Hack" transform="translate(0 0)">
+        <g id="Group_4-8" data-name="Group 4">
+          <g id="Group_1-8" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-15" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="YOUR_IDEA_HERE-4" data-name="YOUR IDEA HERE" transform="translate(44.539 88.902)" fill="#2b2b2b" font-size="38" font-family="Impact"><tspan x="0" y="0">YOUR IDEA HERE</tspan></text>
+          <g id="Group_2-8" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-16" data-name="Rectangle 1" d="M0,0H403.236V115.353a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,115.353Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="Lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt_ut_labore_et_dolore_4" data-name="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore…" transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Lorem ipsum dolor sit amet, </tspan><tspan x="0" y="21">consetetur sadipscing elitr, sed </tspan><tspan x="0" y="42">diam nonumy eirmod tempor </tspan><tspan x="0" y="63">invidunt ut labore et dolore…</tspan></text>
+          <g id="Group_3-8" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-8" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-8" data-name="Group" transform="translate(16.25 15.111)">
+              <text id="Your_4" data-name="Your " transform="translate(0 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Your </tspan></text>
+              <text id="time_4" data-name="time " transform="translate(0.496 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">time </tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De...-7" data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="Any_location_on_campus-4" data-name="Any location on campus" transform="translate(46.248 147.821)" fill="#2b2b2b" font-size="16" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">Any location on campus</tspan></text>
+        </g>
+        <rect id="Rectangle_5-8" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-8" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="Open_Source_SKill-4" data-name="Open Source SKill" transform="translate(312.835 52.71)">
+        <g id="Group_8-4" data-name="Group 8" transform="translate(0 0)">
+          <path id="Path_3-4" data-name="Path 3" d="M22.8,0A22.732,22.732,0,0,0,14.627,43.97a1.405,1.405,0,0,0,1.129-.049,1.432,1.432,0,0,0,.738-.857l4.275-13.626a1.419,1.419,0,0,0-.67-1.67,5.7,5.7,0,1,1,5.4,0,1.416,1.416,0,0,0-.67,1.67L29.11,43.068a1.432,1.432,0,0,0,.738.857,1.448,1.448,0,0,0,.621.142,1.418,1.418,0,0,0,.508-.094A22.734,22.734,0,0,0,22.8,0Z"/>
+        </g>
+      </g>
+    </g>
+    <g id="DIYHacks_Component-2" data-name="DIYHacks Component" transform="matrix(0.829, -0.559, 0.559, 0.829, 817.837, 4762.454)">
+      <g id="Hack-9" data-name="Hack" transform="translate(0 0)">
+        <g id="Group_4-9" data-name="Group 4">
+          <g id="Group_1-9" data-name="Group 1" transform="translate(0)">
+            <path id="Rectangle_1-17" data-name="Rectangle 1" d="M23.065,0H380.172a23.065,23.065,0,0,1,23.065,23.065V225.876H0V23.065A23.065,23.065,0,0,1,23.065,0Z" fill="rgba(255,255,255,0.68)"/>
+          </g>
+          <text id="DIYHacks-2" data-name="DIYHacks" transform="translate(44.539 88.632)" fill="#2b2b2b" font-size="59" font-family="Impact"><tspan x="0" y="0">DIYHacks</tspan></text>
+          <g id="Group_2-9" data-name="Group 2" transform="translate(0 225.876)" opacity="0.8">
+            <path id="Rectangle_1-18" data-name="Rectangle 1" d="M0,0H403.236V93.879a23.065,23.065,0,0,1-23.065,23.065H23.065A23.065,23.065,0,0,1,0,93.879Z" transform="translate(0 0)" fill="rgba(255,255,255,0.51)"/>
+          </g>
+          <text id="A_website_for_university_students_to_host_their_own_hackathon_for_any_kind_of_project._2" data-name="A website for university students to host their own hackathon for  any kind of project. " transform="translate(44.539 261.964)" font-size="18" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">A website for university students </tspan><tspan x="0" y="21" xml:space="preserve">to host their own hackathon for  </tspan><tspan x="0" y="42">any kind of project. </tspan></text>
+          <g id="Group_3-9" data-name="Group 3" transform="translate(261.666 111.347)">
+            <rect id="Rectangle_4-9" data-name="Rectangle 4" width="85.897" height="89.078" rx="14" fill="#2b2b2b"/>
+            <g id="Group-9" data-name="Group" transform="translate(12.56 15.111)">
+              <text id="Sep._3" data-name="Sep. " transform="translate(1.692 22)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Sep. </tspan></text>
+              <text id="_21-22-3" data-name="21-22" transform="translate(0 51.428)" fill="#fff" font-size="23" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">21-22</tspan></text>
+            </g>
+          </g>
+          <text id="Hosted_By:_Aliah_Shaira_De...-8" data-name="Hosted By: Aliah Shaira De..." transform="translate(44.888 116.985)" fill="#2b2b2b" font-size="13" font-family="Raleway-Regular, Raleway"><tspan x="0" y="0">Hosted By: Aliah Shaira De...</tspan></text>
+          <text id="Northwest_4.416-3" data-name="Northwest 4.416" transform="translate(44.887 147.868)" fill="#2b2b2b" font-size="24" font-family="Raleway-Bold, Raleway" font-weight="700"><tspan x="0" y="0">Northwest 4.416</tspan></text>
+        </g>
+        <rect id="Rectangle_5-9" data-name="Rectangle 5" width="194.063" height="37.381" rx="9" transform="translate(44.539 162.249)" fill="#fff"/>
+        <text id="Sign_Up-9" data-name="Sign Up" transform="translate(104.09 187.407)" fill="#2b2b2b" font-size="19" font-family="Raleway-Light, Raleway" font-weight="300"><tspan x="0" y="0">Sign Up</tspan></text>
+      </g>
+      <g id="Web_Skill-2" data-name="Web Skill" transform="translate(304.585 46.765)">
+        <path id="Icon_material-desktop-windows-2" data-name="Icon material-desktop-windows" d="M48.706,0H4.871A4.878,4.878,0,0,0,0,4.856V33.993a4.878,4.878,0,0,0,4.871,4.856H21.917v4.856h-4.87v4.856H36.533V43.7H31.658V38.848H48.706a4.878,4.878,0,0,0,4.871-4.856V4.856A4.878,4.878,0,0,0,48.706,0ZM48.706,33.993Z" transform="translate(0 0)" fill="#2b2b2b"/>
+      </g>
+    </g>
+  </g>
+</svg>
