@@ -19,14 +19,16 @@ const herodata = [
 ]
 
 $(function() {
-    var count = 0;
+    var imgCol = 1;
+    var imgRow = 1;
     //loading in images
     herodata.forEach(col => {
         col.forEach(img => {
-            var element = `<img class = 'img-fluid hero-img' src = '${img}'/>`;
-            $(".hero-img-col").eq(count).append(element);
+            var element = `<img id = "hero-img-${imgCol}-${imgRow}" class = 'img-fluid hero-img' src = '${img}'/>`;
+            $(".hero-img-col").eq(imgCol - 1).append(element);
+            imgRow++;
         });
-        count++;
+        imgCol++;
     });
 
     //Moving images
@@ -43,8 +45,10 @@ $(function() {
 
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutationRecord) {
-            $(".hero-img").each(function() {
-                //continue here. check if img is off the top.
+            $(".hero-img").each(function(index) {
+                if (($(this).offset().top + $(this).outerHeight()) < 0) {
+                    $(this).remove();
+                }
             })
         })
     });
