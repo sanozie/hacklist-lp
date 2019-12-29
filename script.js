@@ -28,4 +28,27 @@ $(function() {
         });
         count++;
     });
+
+    //Moving images
+    anime({
+        targets: ".hero-img",
+        translateX: -130,
+        translateY: -1000,
+        duration: 500000,
+        loop: true,
+    });
+
+
+    //if (($(".hero-img").offset().top + $(".hero-img").outerHeight) < 0) {
+
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutationRecord) {
+            $(".hero-img").each(function() {
+                //continue here. check if img is off the top.
+            })
+        })
+    });
+    $(".hero-img").each(function() {
+        observer.observe(this, { attributes: true, });
+    });
 });
