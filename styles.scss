@@ -1,65 +1,90 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-$primaryFont: 'Anton', sans-serif;
-$subFont: 'Raleway', sans-serif;
-
+$primaryFont: 'Anton',
+sans-serif;
+$subFont: 'Raleway',
+sans-serif;
 //Misc
 .container-fluid {
-     padding: 0;
+    padding: 0;
 }
 
 //Mixins
 @mixin center {
-     margin: auto;
-     display: flex;
-     align-items: center;
-     justify-content: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 @mixin poster {
-     position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 .center-container {
-     @include center;
+    @include center;
 }
+
 .poster {
-     @include poster;
+    @include poster;
 }
 
 //Main Divs
 #hack-nights {
-     background-color: #2B2B2B;
+    background-color: #2B2B2B;
 }
+
 //Items
 #hero-text-container {
-     width: 100vw;
-     height: 100vh;
-     top: 0;
-     color: white;
-     .col-6 {
-          padding: 15px;
-     }
-     h1 {
-          font-size: calc(1rem + 5vw);
-          letter-spacing: calc(0.05rem + 0.1vw);
-     }
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    color: white;
+    padding-left: 8rem;
+    overflow: hidden;
+    #hero-img-container {
+        height: 100%;
+        #hero-rotated-row {
+            transform: rotate(-20deg);
+            margin-top: -15vh;
+            .hero-img-col {
+                padding: 0 3vw 0 3vw;
+            }
+            .hero-img {
+                padding: calc(1rem + 1.5vw) 0 calc(1rem + 1.5vw) 0;
+                min-width: 40px;
+                width: 100%;
+            }
+        }
+    }
+    h1 {
+        font-size: calc(1rem + 5vw);
+        letter-spacing: calc(0.05rem + 0.1vw);
+    }
 }
+
 #project-text-container {
-     bottom: 0;
-     width: 100vw;
-     //Needs fix to be responsive
-          height: 120vh;
+    bottom: 0;
+    width: 100vw;
+    //Needs fix to be responsive
+    height: 120vh;
 }
 
 //Text
-h1, h2, h3, h4, h5, h6 {
-     font-family: $primaryFont;
-}
-p {
-     font-family: $subFont;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primaryFont;
 }
 
+p {
+    font-family: $subFont;
+}

@@ -1,96 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-     <meta charset="utf-8">
-     <title>DIYHacks</title>
-     <meta name="author" content="DIYHacks Team - Samuel Anozie">
-     <meta name="description" content="Example description">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>DIYHacks</title>
+    <meta name="author" content="DIYHacks Team - Samuel Anozie">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <!-- Bootstrap Links -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     
-     <!-- jQuery -->
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-     <!--Anime.js-->
-     <script src="anime.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-     <!--My Styles-->
-     <link rel="stylesheet" href="styles.css">
+    <!--Anime.js-->
+    <script src="anime.min.js"></script>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--JS-->
+    <script src="script.js"></script>
 </head>
 
 <body>
-     <div id = "hero" class="container-fluid position-relative">
-          <img class = "img-fluid" src = "imgs/Backgrounds/HeroSectionBack.svg"/>
-          <div id = "hero-text-container" class = "row position-absolute">
-               <div class = "col-6 center-container">
-                   <div class = "center-env">
-                        <h1>THE ALL-IN-ONE PLATFORM FOR PRODUCT DEVELOPMENT</h1>
-                        <p>Introducing DIYHacks, the online center for college students
-                             invested in building projects. </p>
-                   </div>
-               </div>
-               <div class = "col-6">
-                    <div class = "row">
-                         <div class = "col-4">
-                              
-                         </div>
-                         <div class = "col-4">
-                              
-                         </div>
-                         <div class = "col-4">
-                              
-                         </div>
-                    </div>
-               </div>
-          </div>
-</div>
-     <div id = "about" class = "container-fluid">
-          <div class = "row justify-content-center">
-              <div class = "col-6">
-                   <img class = "img-fluid" src = "imgs/Assets/Designs/Gears.svg"/>
-              </div>
-          </div>
-          <div class = "row justify-content-center">
-               <div class  = "col-8 center-container">
-                    <div class = "row justify-content-center">
-                         <h2 class = "text-right">DECENTRALIZE THE COLLEGE HACKATHON</h2>
-                         <p class = "text-right">Surround yourself with those that build the future. By teaming up with motivated <span class = "colored-text">developers, designers, and product managers,</span> we help you make your ideas a<span class = "colored-text-enphasis">reality.</span></p>
-                         <button class = "btn">GET STARTED</button>
-                    </div>
-               </div>
-          </div>
-</div>
-     <div id = "project-board" class = "container-fluid position-relative">
-          <img class = "img-fluid" src = "imgs/Backgrounds/ProjectBoardBack.svg">
-          <div id = "project-text-container" class = "container-fluid position-absolute center-container">
-               <div class = "col-6">
-                    <img class = "img-fluid" src = "imgs/Assets/Designs/Project%20Board%20Components.svg"/>
-               </div>
-               <div class = "col-6 center-container">
-                    <div class = "center-env">
-                         <h2>DIYHACKS PROJECT BOARD</h2>
-                         <p>With our campus-specific Project Board, you can find interesting projects and reach out to people who are as excited as you are about each idea. 
-                              <span class = "bold">Launching Beta Fall 2020.</span></p>
-                    </div>
-               </div>
-          </div>
-     </div>
-     <div id = "hack-nights" class = "container-fluid position-relative">
-          <img class = "img-fluid" src = "imgs/Backgrounds/ProjectWave.svg"/>
-          <div id = "night-text-containter" class = "row">
-               <div class = "col-md-6 center-container">
-                   <div class = "center-env">
-                        <h2>DIYHack Nights</h2>
-                        <p>Casual meet-ups of the DIYHacks community to socialize and/or work on projects. Chill at various places around campus, and make sure to bring some food. We like to share. (Don't forget drinks)</p>
-                        <button class = "btn">LEARN MORE</button>
-                   </div>
-               </div>
-               <div class = "col-md-6">
-                    <img class = "img-fluid" src = "imgs/Assets/Designs/Moon.svg"/>
-               </div>
-          </div>
-     </div>
+    <div id="hero" class="container-fluid position-relative">
+        <img class="img-fluid" src="imgs/Backgrounds/HeroSectionBack.svg" />
+        <div id="hero-text-container" class="row position-absolute">
+            <div class="col-6 center-container">
+                <div class="center-env">
+                    <h1>A COMMUNITY PLATFORM FOR PRODUCT DEVELOPMENT</h1>
+                    <p>Introducing DIYHacks, the online center for college students invested in building projects.</p>
+                </div>
+            </div>
+            <div id="hero-img-container" class="col-6 position-relative">
+                <div id="hero-rotated-row" class="row poster">
+                    <div class="hero-img-col col-4"></div>
+                    <div class="hero-img-col col-4"></div>
+                    <div class="hero-img-col col-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <img class="img-fluid" src="imgs/Assets/Designs/Gears.svg" />
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8 center-container">
+                <div class="row justify-content-center">
+                    <h2 class="text-right">DECENTRALIZE THE COLLEGE HACKATHON</h2>
+                    <p class="text-right">Surround yourself with those that build the future. By teaming up with motivated <span class="colored-text">developers, designers, and product managers,</span> we help you make your ideas a<span class="colored-text-enphasis">reality.</span></p>
+                    <button class="btn">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="project-board" class="container-fluid position-relative">
+        <img class="img-fluid" src="imgs/Backgrounds/ProjectBoardBack.svg">
+        <div id="project-text-container" class="container-fluid position-absolute center-container">
+            <div class="col-6">
+                <img class="img-fluid" src="imgs/Assets/Designs/Project%20Board%20Components.svg" />
+            </div>
+            <div class="col-6 center-container">
+                <div class="center-env">
+                    <h2>DIYHACKS PROJECT BOARD</h2>
+                    <p>With our campus-specific Project Board, you can find interesting projects and reach out to people who are as excited as you are about each idea.
+                        <span class="bold">Launching Beta Fall 2020.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hack-nights" class="container-fluid position-relative">
+        <img class="img-fluid" src="imgs/Backgrounds/ProjectWave.svg" />
+        <div id="night-text-containter" class="row">
+            <div class="col-md-6 center-container">
+                <div class="center-env">
+                    <h2>DIYHack Nights</h2>
+                    <p>Casual meet-ups of the DIYHacks community to socialize and/or work on projects. Chill at various places around campus, and make sure to bring some food. We like to share. (Don't forget drinks)</p>
+                    <button class="btn">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="imgs/Assets/Designs/Moon.svg" />
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
