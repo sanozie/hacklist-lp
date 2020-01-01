@@ -24,14 +24,12 @@ $(function() {
     //loading in images
     herodata.forEach(col => {
         col.forEach(img => {
-            var element = `<img data-img-col = ${imgCol} data-img-row = ${imgRow} class = 'img-fluid position-absolute hero-img' src = '${img}'/>`;
+            var element = `<img data-img-col = ${imgCol} data-img-row = ${imgRow} class = 'img-fluid hero-img' src = '${img}'/>`;
             $(".hero-img-col").eq(imgCol - 1).append(element);
-            var top = (imgRow - 1) * 25;
-            $(`img[data-img-col = ${imgCol}][data-img-row = ${imgRow}]`).css("top", `${top}%`);
             imgRow++;
         });
         imgCol++;
-        imgRow = 0;
+        imgRow = 1;
     });
 
     //Moving images
@@ -39,24 +37,25 @@ $(function() {
         targets: ".hero-img",
         translateX: -130,
         translateY: -1000,
-        duration: 800000,
+        duration: 600000,
         loop: true,
     });
 
 
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutationRecord) {
-            $(".hero-img").each(function(index) {
-                var img = $(this);
-                if ((img.offset().top + img.outerHeight()) < 0) {
-                    img.remove();
-                    img.next().css("margin-top", `${img.outerHeight()*2}px`);
-                    $(`#hero-img-col-${img.attr("data-img-col")}`).append(img);
-                }
-            })
-        })
+            var img = mutationRecord.target;
+            var imgCol = $(img).attr("data-img-col");
+            if (($(img).offset().top + $(img).outerHeight()) < 0) {
+                $(img).remove();
+                $(`#hero-img-col-${imgCol}`).append($(img));
+            }
+        });
     });
     $(".hero-img").each(function() {
-        observer.observe(this, { attributes: true, });
+        observer.observe(this, {
+            attributes: true,
+            attributeFilter: ["style"]
+        });
     });
 });
