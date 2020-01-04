@@ -58,12 +58,13 @@ sans-serif;
             .hero-img {
                 padding: calc(1rem + 1.5vw) 0 calc(1rem + 1.5vw) 0;
                 min-width: 40px;
-                width: 75%;
+                transform: translate(1px);
+                transition: transform 5s linear;
             }
         }
     }
     h1 {
-        font-size: calc(1rem + 5vw);
+        font-size: calc(1.3rem + 4vw);
         letter-spacing: calc(0.05rem + 0.1vw);
     }
 }

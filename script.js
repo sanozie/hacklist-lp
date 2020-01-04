@@ -1,3 +1,5 @@
+//Animation
+
 const herodata = [
     [
         "imgs/Assets/Icons/cloud.svg",
@@ -19,64 +21,78 @@ const herodata = [
 ]
 
 $(function() {
-    var imgCol = 1,
-        imgRow = 1;
-    //loading in images
+    //Loading in Hero Images
+    var imgCol = 1;
     herodata.forEach(col => {
         col.forEach(img => {
-<<<<<<< HEAD
-            var element = `<img data-img-col = ${imgCol} data-img-row = ${imgRow} class = 'img-fluid hero-img' src = '${img}'/>`;
-=======
-            var element = `<img data-img-col = ${imgCol} data-img-row = ${imgRow} class = 'img-fluid position-absolute hero-img' src = '${img}'/>`;
->>>>>>> 928af1d... Absolute position for hero elements
+            var element = `<img class = 'img-fluid hero-img' src = '${img}'/>`;
             $(".hero-img-col").eq(imgCol - 1).append(element);
-            var top = (imgRow - 1) * 25;
-            $(`img[data-img-col = ${imgCol}][data-img-row = ${imgRow}]`).css("top", `${top}%`);
-            imgRow++;
         });
         imgCol++;
-<<<<<<< HEAD
-        imgRow = 1;
-=======
-        imgRow = 0;
->>>>>>> 928af1d... Absolute position for hero elements
     });
 
     //Moving images
     anime({
-        targets: ".hero-img",
-        translateX: -130,
-        translateY: -1000,
-<<<<<<< HEAD
-        duration: 600000,
-=======
-        duration: 800000,
->>>>>>> 928af1d... Absolute position for hero elements
-        loop: true,
+        targets: "#hero-img-col-1",
+        translateX: [-10, 5],
+        translateY: [-50, 25],
+        duration: 5000,
+        easing: 'easeInOutQuad',
+        direction: "alternate",
+        loop: true
     });
-
-
-    var observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutationRecord) {
-<<<<<<< HEAD
+    anime({
+        targets: "#hero-img-col-2",
+        translateX: [-10, 5],
+        translateY: [-50, 25],
+        duration: 5000,
+        easing: 'easeInOutQuad',
+        direction: "alternate",
+        delay: 100,
+        loop: true
+    });
+    anime({
+        targets: "#hero-img-col-3",
+        translateX: [-10, 5],
+        translateY: [-50, 25],
+        duration: 5000,
+        easing: 'easeInOutQuad',
+        direction: "alternate",
+        delay: 200,
+        loop: true
+    });
+    /*FOR FUTURE USE: when we figure out how to infinitly scroll images and load back images 
+    when they get off screen. For now, an easier animation.
+    //Cheking for off-screen images and re-placing them
+    var colCounter1 = 0,
+        colCounter2 = 0,
+        colCounter3 = 0,
+        top = 0;
+    var observer = new MutationObserver(mutations => {
+        mutations.forEach(mutationRecord => {
             var img = mutationRecord.target;
             var imgCol = $(img).attr("data-img-col");
             if (($(img).offset().top + $(img).outerHeight()) < 0) {
                 $(img).remove();
                 $(`#hero-img-col-${imgCol}`).append($(img));
+                switch (imgCol) {
+                    case "1":
+                        colCounter1++;
+                        top = 100 + 25 * colCounter1;
+                        console.log(colCounter1);
+                        break;
+                    case "2":
+                        colCounter2++;
+                        top = 100 + 25 * colCounter2;
+                        break;
+                    case "3":
+                        colCounter3++;
+                        top = 100 + 25 * colCounter3;
+                        break;
+                }
+                $(img).css("top", `${top}%`);
             }
         });
-=======
-            $(".hero-img").each(function(index) {
-                var img = $(this);
-                if ((img.offset().top + img.outerHeight()) < 0) {
-                    img.remove();
-                    img.next().css("margin-top", `${img.outerHeight()*2}px`);
-                    $(`#hero-img-col-${img.attr("data-img-col")}`).append(img);
-                }
-            })
-        })
->>>>>>> 928af1d... Absolute position for hero elements
     });
     $(".hero-img").each(function() {
         observer.observe(this, {
@@ -84,4 +100,5 @@ $(function() {
             attributeFilter: ["style"]
         });
     });
+    */
 });

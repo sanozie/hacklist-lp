@@ -55,11 +55,16 @@
 #hero-text-container #hero-img-container #hero-rotated-row .hero-img {
   padding: calc(1rem + 1.5vw) 0 calc(1rem + 1.5vw) 0;
   min-width: 40px;
-  width: 75%;
+  -webkit-transform: translate(1px);
+          transform: translate(1px);
+  -webkit-transition: -webkit-transform 5s linear;
+  transition: -webkit-transform 5s linear;
+  transition: transform 5s linear;
+  transition: transform 5s linear, -webkit-transform 5s linear;
 }
 
 #hero-text-container h1 {
-  font-size: calc(1rem + 5vw);
+  font-size: calc(1.3rem + 4vw);
   letter-spacing: calc(0.05rem + 0.1vw);
 }
 
