@@ -34,7 +34,39 @@ sans-serif;
     @include poster;
 }
 
+.colored-text {
+    background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.enphasis {
+    font-weight: bolder;
+}
+
+.btn-primary {
+    background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
+    color: white;
+    font-family: $primaryFont;
+    border: none;
+    padding: .8rem 2rem;
+    font-size: 1.3rem;
+}
+
+//SVG's
+#multipleGears {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 //Main Divs
+#about {
+    h2 {
+        font-size: calc(0.7rem + 5vw);
+    }
+}
+
 #hack-nights {
     background-color: #2B2B2B;
 }
@@ -64,7 +96,7 @@ sans-serif;
         }
     }
     h1 {
-        font-size: calc(1.3rem + 4vw);
+        font-size: calc(0.7rem + 5vw);
         letter-spacing: calc(0.05rem + 0.1vw);
     }
 }

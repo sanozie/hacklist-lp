@@ -3,15 +3,15 @@
 const herodata = [
     [
         "imgs/Assets/Icons/cloud.svg",
+        "imgs/Assets/Icons/server.svg",
         "imgs/Assets/Icons/pm.svg",
-        "imgs/Assets/Icons/web.svg",
-        "imgs/Assets/Icons/server.svg"
+        "imgs/Assets/Icons/web.svg"
     ],
     [
-        "imgs/Assets/Icons/uxui.svg",
         "imgs/Assets/Icons/android.svg",
         "imgs/Assets/Icons/opensource.svg",
-        "imgs/Assets/Icons/blockchain.svg"
+        "imgs/Assets/Icons/blockchain.svg",
+        "imgs/Assets/Icons/uxui.svg"
     ],
     [
         "imgs/Assets/Icons/ios.svg",
