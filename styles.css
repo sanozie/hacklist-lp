@@ -35,6 +35,13 @@
   font-weight: bolder;
 }
 
+.btn {
+  font-family: "Anton", sans-serif;
+  border: none;
+  padding: .8rem 2rem;
+  font-size: 1.3rem;
+}
+
 .btn-primary {
   background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
   color: white;
@@ -42,6 +49,11 @@
   border: none;
   padding: .8rem 2rem;
   font-size: 1.3rem;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: gray;
 }
 
 #multipleGears {
@@ -52,6 +64,11 @@
 
 #about h2 {
   font-size: calc(0.7rem + 5vw);
+}
+
+#project-board {
+  background-image: url("imgs/Backgrounds/ProjectBoardBack.svg");
+  background-size: cover;
 }
 
 #hack-nights {
@@ -97,10 +114,29 @@
   letter-spacing: calc(0.05rem + 0.1vw);
 }
 
-#project-text-container {
-  bottom: 0;
-  width: 100vw;
-  height: 120vh;
+#project-board-items img {
+  height: 150vh;
+  margin: 60vh 0 0 -10vw;
+  max-width: 60vw;
+}
+
+#project-board-items h2 {
+  color: white;
+  font-size: calc(0.7rem + 5vw);
+  letter-spacing: calc(0.05rem + 0.1vw);
+}
+
+#project-board-items p {
+  color: white;
+  font-size: calc(0.7rem + 0.6vw);
+}
+
+#project-board-items #project-board-center-container {
+  margin-top: 10vh;
+}
+
+#project-board-items .center-env {
+  padding-top: 50vh;
 }
 
 h1,

@@ -44,6 +44,13 @@ sans-serif;
     font-weight: bolder;
 }
 
+.btn {
+    font-family: $primaryFont;
+    border: none;
+    padding: .8rem 2rem;
+    font-size: 1.3rem;
+}
+
 .btn-primary {
     background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
     color: white;
@@ -51,6 +58,11 @@ sans-serif;
     border: none;
     padding: .8rem 2rem;
     font-size: 1.3rem;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: gray;
 }
 
 //SVG's
@@ -65,6 +77,11 @@ sans-serif;
     h2 {
         font-size: calc(0.7rem + 5vw);
     }
+}
+
+#project-board {
+    background-image: url('imgs/Backgrounds/ProjectBoardBack.svg');
+    background-size: cover;
 }
 
 #hack-nights {
@@ -101,11 +118,27 @@ sans-serif;
     }
 }
 
-#project-text-container {
-    bottom: 0;
-    width: 100vw;
-    //Needs fix to be responsive
-    height: 120vh;
+#project-board-items {
+    img {
+        height: 150vh;
+        margin: 60vh 0 0 -10vw;
+        max-width: 60vw;
+    }
+    h2 {
+        color: white;
+        font-size: calc(0.7rem + 5vw);
+        letter-spacing: calc(0.05rem + 0.1vw);
+    }
+    p {
+        color: white;
+        font-size: calc(0.7rem + 0.6vw);
+    }
+    #project-board-center-container {
+        margin-top: 10vh;
+    }
+    .center-env {
+        padding-top: 50vh;
+    }
 }
 
 //Text
