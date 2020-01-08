@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+body {
+  overflow-x: hidden;
+}
+
 .container-fluid {
   padding: 0;
+}
+
+.row {
+  margin: 0;
 }
 
 .center-container {
@@ -40,6 +48,7 @@
   border: none;
   padding: .8rem 2rem;
   font-size: 1.3rem;
+  letter-spacing: calc(0.02rem + 0.05vw);
 }
 
 .btn-primary {
@@ -62,8 +71,32 @@
   width: 100%;
 }
 
-#about h2 {
-  font-size: calc(0.7rem + 5vw);
+#topWaves {
+  top: 0;
+  width: 100vw;
+}
+
+#bottomWaves {
+  bottom: 0;
+  width: 100vw;
+}
+
+.top-wave {
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-wave {
+  position: absolute;
+  top: 0;
+}
+
+.upperWave {
+  z-index: 2;
+}
+
+.lowerWave {
+  z-index: 1;
 }
 
 #project-board {
@@ -73,6 +106,7 @@
 
 #hack-nights {
   background-color: #2B2B2B;
+  color: white;
 }
 
 #hero-text-container {
@@ -86,6 +120,7 @@
 
 #hero-text-container #hero-img-container {
   height: 100%;
+  padding: 0;
 }
 
 #hero-text-container #hero-img-container #hero-rotated-row {
@@ -107,11 +142,7 @@
   transition: -webkit-transform 5s linear;
   transition: transform 5s linear;
   transition: transform 5s linear, -webkit-transform 5s linear;
-}
-
-#hero-text-container h1 {
-  font-size: calc(0.7rem + 5vw);
-  letter-spacing: calc(0.05rem + 0.1vw);
+  width: 100%;
 }
 
 #project-board-items img {
@@ -120,15 +151,9 @@
   max-width: 60vw;
 }
 
-#project-board-items h2 {
-  color: white;
-  font-size: calc(0.7rem + 5vw);
-  letter-spacing: calc(0.05rem + 0.1vw);
-}
-
+#project-board-items h2,
 #project-board-items p {
   color: white;
-  font-size: calc(0.7rem + 0.6vw);
 }
 
 #project-board-items #project-board-center-container {
@@ -137,6 +162,10 @@
 
 #project-board-items .center-env {
   padding-top: 50vh;
+}
+
+#night-text-containter {
+  padding-left: 5rem;
 }
 
 h1,
@@ -148,7 +177,14 @@ h6 {
   font-family: "Anton", sans-serif;
 }
 
+h1,
+h2 {
+  font-size: calc(0.7rem + 5vw);
+  letter-spacing: calc(0.05rem + 0.1vw);
+}
+
 p {
   font-family: "Raleway", sans-serif;
+  font-size: calc(0.7rem + 0.6vw);
 }
 /*# sourceMappingURL=styles.css.map */

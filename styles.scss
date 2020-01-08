@@ -6,10 +6,6 @@ sans-serif;
 $subFont: 'Raleway',
 sans-serif;
 //Misc
-.container-fluid {
-    padding: 0;
-}
-
 //Mixins
 @mixin center {
     margin: auto;
@@ -24,6 +20,19 @@ sans-serif;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+//Misc 
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
 }
 
 .center-container {
@@ -49,6 +58,7 @@ sans-serif;
     border: none;
     padding: .8rem 2rem;
     font-size: 1.3rem;
+    letter-spacing: calc(0.02rem + 0.05vw);
 }
 
 .btn-primary {
@@ -72,13 +82,35 @@ sans-serif;
     width: 100%;
 }
 
-//Main Divs
-#about {
-    h2 {
-        font-size: calc(0.7rem + 5vw);
-    }
+#topWaves {
+    top: 0;
+    width: 100vw;
 }
 
+#bottomWaves {
+    bottom: 0;
+    width: 100vw;
+}
+
+.top-wave {
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-wave {
+    position: absolute;
+    top: 0;
+}
+
+.upperWave {
+    z-index: 2;
+}
+
+.lowerWave {
+    z-index: 1;
+}
+
+//Main Divs
 #project-board {
     background-image: url('imgs/Backgrounds/ProjectBoardBack.svg');
     background-size: cover;
@@ -86,6 +118,7 @@ sans-serif;
 
 #hack-nights {
     background-color: #2B2B2B;
+    color: white;
 }
 
 //Items
@@ -98,6 +131,7 @@ sans-serif;
     overflow: hidden;
     #hero-img-container {
         height: 100%;
+        padding: 0;
         #hero-rotated-row {
             transform: rotate(-20deg);
             margin-top: -15vh;
@@ -109,12 +143,9 @@ sans-serif;
                 min-width: 40px;
                 transform: translate(1px);
                 transition: transform 5s linear;
+                width: 100%;
             }
         }
-    }
-    h1 {
-        font-size: calc(0.7rem + 5vw);
-        letter-spacing: calc(0.05rem + 0.1vw);
     }
 }
 
@@ -124,14 +155,9 @@ sans-serif;
         margin: 60vh 0 0 -10vw;
         max-width: 60vw;
     }
-    h2 {
-        color: white;
-        font-size: calc(0.7rem + 5vw);
-        letter-spacing: calc(0.05rem + 0.1vw);
-    }
+    h2,
     p {
         color: white;
-        font-size: calc(0.7rem + 0.6vw);
     }
     #project-board-center-container {
         margin-top: 10vh;
@@ -139,6 +165,10 @@ sans-serif;
     .center-env {
         padding-top: 50vh;
     }
+}
+
+#night-text-containter {
+    padding-left: 5rem;
 }
 
 //Text
@@ -151,6 +181,13 @@ h6 {
     font-family: $primaryFont;
 }
 
+h1,
+h2 {
+    font-size: calc(0.7rem + 5vw);
+    letter-spacing: calc(0.05rem + 0.1vw);
+}
+
 p {
     font-family: $subFont;
+    font-size: calc(0.7rem + 0.6vw);
 }
