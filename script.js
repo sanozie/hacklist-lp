@@ -101,4 +101,40 @@ $(function() {
         });
     });
     */
+
+    //Scrolling animations
+    //Moving elements on scroll
+    $.fn.moveIt = function() {
+        var $window = $(window);
+        var instances = [];
+
+        $(this).each(function() {
+            instances.push(new moveItItem($(this)));
+        });
+        window.addEventListener('scroll', function() {
+            var scrollTop = $window.scrollTop();
+            instances.forEach(function(inst) {
+                inst.update(scrollTop);
+            });
+        }, { passive: true });
+
+    }
+
+    var moveItItem = function(el) {
+        this.el = $(el);
+        this.speed = parseInt(this.el.attr('data-scroll-speed'));
+    };
+
+    moveItItem.prototype.update = function(scrollTop) {
+        var top_of_element = this.el.offset().top;
+        var bottom_of_element = this.el.offset().top + this.el.outerHeight();
+        var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        var top_of_screen = $(window).scrollTop();
+        if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
+            this.el.css('transform', 'translateY(' + ((scrollTop - top_of_element) / this.speed) + 'px)');
+        }
+    };
+
+
+    $('[data-scroll-speed]').moveIt();
 });

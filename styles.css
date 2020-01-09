@@ -36,6 +36,7 @@ body {
 .colored-text {
   background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -97,6 +98,10 @@ body {
 
 .lowerWave {
   z-index: 1;
+}
+
+#about {
+  margin: 8rem 0;
 }
 
 #project-board {
