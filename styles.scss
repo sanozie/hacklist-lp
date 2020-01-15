@@ -101,6 +101,7 @@ body {
 .bottom-wave {
     position: absolute;
     top: 0;
+    transform: rotate(180deg);
 }
 
 .upperWave {
@@ -194,5 +195,5 @@ h2 {
 
 p {
     font-family: $subFont;
-    font-size: calc(0.7rem + 0.6vw);
+    font-size: calc(0.5rem + 0.6vw);
 }

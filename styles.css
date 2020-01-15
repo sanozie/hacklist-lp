@@ -90,6 +90,8 @@ body {
 .bottom-wave {
   position: absolute;
   top: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .upperWave {
@@ -190,6 +192,6 @@ h2 {
 
 p {
   font-family: "Raleway", sans-serif;
-  font-size: calc(0.7rem + 0.6vw);
+  font-size: calc(0.5rem + 0.6vw);
 }
 /*# sourceMappingURL=styles.css.map */
