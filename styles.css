@@ -33,6 +33,18 @@ body {
   right: 0;
 }
 
+.center-container-nm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .colored-text {
   background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
   -webkit-background-clip: text;
@@ -72,7 +84,7 @@ body {
   width: 100%;
 }
 
-#topWaves {
+.topWaves {
   top: 0;
   width: 100vw;
 }
@@ -102,6 +114,14 @@ body {
   z-index: 1;
 }
 
+#slack-svg-div {
+  margin-top: 10%;
+}
+
+.prof-icon-row {
+  height: 20%;
+}
+
 #about {
   margin: 8rem 0;
 }
@@ -114,6 +134,24 @@ body {
 #hack-nights {
   background-color: #2B2B2B;
   color: white;
+}
+
+#slack {
+  margin-top: 20%;
+}
+
+#contact {
+  background-image: url("imgs/Backgrounds/ContactBack.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 40%;
+  padding-bottom: 20%;
+  color: white;
+}
+
+#footer {
+  background-color: black;
+  height: 10vh;
 }
 
 #hero-text-container {
@@ -175,6 +213,27 @@ body {
   padding-left: 5rem;
 }
 
+.profile-row {
+  margin: 5% 0 5% 0%;
+}
+
+.profile-icon {
+  width: 80%;
+}
+
+.footer-col {
+  margin: auto 0 auto 0;
+}
+
+.footer-col #footerLogo {
+  font-family: "Anton", sans-serif;
+}
+
+.footer-col p {
+  color: white;
+  display: inline;
+}
+
 h1,
 h2,
 h3,
@@ -188,6 +247,11 @@ h1,
 h2 {
   font-size: calc(0.7rem + 5vw);
   letter-spacing: calc(0.05rem + 0.1vw);
+}
+
+h3 {
+  font-size: calc(0.3rem + 2vw);
+  letter-spacing: 0.02rem;
 }
 
 p {

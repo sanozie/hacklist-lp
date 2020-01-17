@@ -14,6 +14,12 @@ sans-serif;
     justify-content: center;
 }
 
+@mixin centerNM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @mixin poster {
     position: absolute;
     top: 0;
@@ -41,6 +47,10 @@ body {
 
 .poster {
     @include poster;
+}
+
+.center-container-nm {
+    @include centerNM;
 }
 
 .colored-text {
@@ -112,6 +122,14 @@ body {
     z-index: 1;
 }
 
+#slack-svg-div {
+    margin-top: 10%;
+}
+
+.prof-icon-row {
+    height: 20%;
+}
+
 //Main Divs
 #about {
     margin: 8rem 0;
@@ -125,6 +143,25 @@ body {
 #hack-nights {
     background-color: #2B2B2B;
     color: white;
+}
+
+#slack {
+    margin-top: 20%;
+    //Eventually make this javascript based, to make sure to clear the svg overhead. Or change structure
+}
+
+#contact {
+    background-image: url("imgs/Backgrounds/ContactBack.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40%;
+    padding-bottom: 20%;
+    color: white;
+}
+
+#footer {
+    background-color: black;
+    height: 10vh;
 }
 
 //Items
@@ -177,6 +214,25 @@ body {
     padding-left: 5rem;
 }
 
+.profile-row {
+    margin: 5% 0 5% 0%;
+}
+
+.profile-icon {
+    width: 80%;
+}
+
+.footer-col {
+    margin: auto 0 auto 0;
+    #footerLogo {
+        font-family: $primaryFont;
+    }
+    p {
+        color: white;
+        display: inline;
+    }
+}
+
 //Text
 h1,
 h2,
@@ -191,6 +247,11 @@ h1,
 h2 {
     font-size: calc(0.7rem + 5vw);
     letter-spacing: calc(0.05rem + 0.1vw);
+}
+
+h3 {
+    font-size: calc(0.3rem + 2vw);
+    letter-spacing: 0.02rem;
 }
 
 p {
