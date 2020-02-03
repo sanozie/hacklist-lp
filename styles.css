@@ -14,9 +14,15 @@ body {
 
 .center-container {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .poster {
@@ -36,9 +42,15 @@ body {
 }
 
 .center-container-nm {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .colored-text {
@@ -55,7 +67,7 @@ body {
 .btn {
   font-family: "Anton", sans-serif;
   border: none;
-  padding: 0.8rem 2rem;
+  padding: .8rem 2rem;
   font-size: 1.3rem;
   letter-spacing: calc(0.02rem + 0.05vw);
 }
@@ -66,6 +78,7 @@ body {
   font-family: "Anton", sans-serif;
   border: none;
   font-size: 1.3rem;
+  -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
@@ -88,6 +101,7 @@ body {
 #blur {
   z-index: 10;
   height: 100vh;
+  -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
   will-change: opacity;
   position: absolute;
@@ -136,6 +150,7 @@ body {
   top: 20%;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.678);
+  -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
   will-change: opacity;
   color: white;
@@ -146,6 +161,7 @@ body {
   height: auto;
   overflow-x: hidden;
 }
+
 #hero-back img {
   width: 1536px;
 }
@@ -193,22 +209,31 @@ body {
   color: white;
   overflow: hidden;
 }
+
 #hero-text-container #hero-img-container {
   height: 100%;
   padding: 0;
 }
+
 #hero-text-container #hero-img-container #hero-rotated-row {
-  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
   margin-top: -15vh;
 }
+
 #hero-text-container #hero-img-container #hero-rotated-row .hero-img-col {
   padding: 0 3vw 0 3vw;
 }
+
 #hero-text-container #hero-img-container #hero-rotated-row .hero-img {
   padding: calc(1rem + 1.5vw) 0 calc(1rem + 1.5vw) 0;
   min-width: 40px;
-  transform: translate(1px);
+  -webkit-transform: translate(1px);
+          transform: translate(1px);
+  -webkit-transition: -webkit-transform 5s linear;
+  transition: -webkit-transform 5s linear;
   transition: transform 5s linear;
+  transition: transform 5s linear, -webkit-transform 5s linear;
   width: 100%;
 }
 
@@ -217,13 +242,16 @@ body {
   margin: 60vh 0 0 -10vw;
   max-width: 60vw;
 }
+
 #project-board-items h2,
 #project-board-items p {
   color: white;
 }
+
 #project-board-items #project-board-center-container {
   margin-top: 10vh;
 }
+
 #project-board-items .center-env {
   padding-top: 50vh;
 }
@@ -249,9 +277,11 @@ body {
 .footer-col {
   margin: auto 0 auto 0;
 }
+
 .footer-col #footerLogo {
   font-family: "Anton", sans-serif;
 }
+
 .footer-col p {
   color: white;
   display: inline;
@@ -259,12 +289,15 @@ body {
 
 #formRow {
   padding-right: 1rem;
+  font-size: calc(0.4rem + 1vw);
 }
 
 .form-control {
   margin: 3px 0;
   position: relative;
   z-index: 2;
+  font-family: "Raleway", sans-serif;
+  font-size: calc(0.4rem + 1vw);
 }
 
 .input-col {
@@ -279,8 +312,9 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  border-radius: 0.25rem;
+  border-radius: .25rem;
   display: none;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#dd00ff), color-stop(#00bdff), to(#50e3c1));
   background-image: linear-gradient(to right top, #dd00ff, #00bdff, #50e3c1);
 }
 
@@ -312,7 +346,8 @@ body {
 .bottom-wave {
   position: absolute;
   top: 0;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .upperWave {
@@ -340,9 +375,13 @@ h6 {
   font-family: "Anton", sans-serif;
 }
 
-h1,
-h2 {
+h1 {
   font-size: calc(3rem + 3vw);
+  letter-spacing: calc(0.05rem + 0.1vw);
+}
+
+h2 {
+  font-size: calc(2rem + 2vw);
   letter-spacing: calc(0.05rem + 0.1vw);
 }
 
@@ -359,5 +398,4 @@ p {
   font-family: "Raleway", sans-serif;
   font-size: calc(0.5rem + 1vw);
 }
-
 /*# sourceMappingURL=styles.css.map */

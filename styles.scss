@@ -5,7 +5,6 @@ $primaryFont: 'Anton',
 sans-serif;
 $subFont: 'Raleway',
 sans-serif;
-
 //Mixins
 @mixin center {
     margin: auto;
@@ -90,10 +89,11 @@ body {
     font-family: $primaryFont;
     border: none;
     font-size: 1.3rem;
-	transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
 }
+
 .btn-primary:hover {
-	opacity: 0.7;
+    opacity: 0.7;
 }
 
 .btn-secondary {
@@ -103,10 +103,11 @@ body {
 
 .btn-tertiary {
     background: none;
-	border: none;
-	font-size: 1.3rem;
+    border: none;
+    font-size: 1.3rem;
     color: white;
 }
+
 #blur {
     z-index: 10;
     height: 100vh;
@@ -136,13 +137,16 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+
 .hovered {
-	z-index: 10;
+    z-index: 10;
 }
+
 .lowered {
-	z-index: 5;
-	opacity: 0.3;
+    z-index: 5;
+    opacity: 0.3;
 }
+
 //Main Divs
 #invisible {
     text-align: center;
@@ -156,17 +160,20 @@ body {
     will-change: opacity;
     color: white;
 }
+
 #hero-back {
-	width: 100vw;
-	height: auto;
-	overflow-x: hidden;
-	img {
-		width: 1536px;
-	}
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+    img {
+        width: 1536px;
+    }
 }
+
 #hero {
-	top: 0;
+    top: 0;
 }
+
 #about {
     margin: 8rem 0;
 }
@@ -277,12 +284,15 @@ body {
 //Forms 
 #formRow {
     padding-right: 1rem;
+    font-size: calc(0.4rem + 1vw);
 }
 
 .form-control {
     margin: 3px 0;
     position: relative;
     z-index: 2;
+    font-family: $subFont;
+    font-size: calc(0.4rem + 1vw);
 }
 
 .input-col {
@@ -356,9 +366,13 @@ h6 {
     font-family: $primaryFont;
 }
 
-h1,
-h2 {
+h1 {
     font-size: calc(3rem + 3vw);
+    letter-spacing: calc(0.05rem + 0.1vw);
+}
+
+h2 {
+    font-size: calc(2rem + 2vw);
     letter-spacing: calc(0.05rem + 0.1vw);
 }
 
@@ -368,7 +382,7 @@ h3 {
 }
 
 h4 {
-	font-size: calc(1.3rem + 1vw);
+    font-size: calc(1.3rem + 1vw);
 }
 
 p {
