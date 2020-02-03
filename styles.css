@@ -240,7 +240,7 @@ body {
 #project-board-items img {
   height: 150vh;
   margin: 60vh 0 0 -10vw;
-  max-width: 60vw;
+  min-width: 60vw;
 }
 
 #project-board-items h2,
@@ -248,8 +248,9 @@ body {
   color: white;
 }
 
-#project-board-items #project-board-center-container {
-  margin-top: 10vh;
+#project-board-items #project-text-container {
+  margin-top: 60vh;
+  right: 0;
 }
 
 #project-board-items .center-env {

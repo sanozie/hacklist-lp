@@ -238,14 +238,15 @@ body {
     img {
         height: 150vh;
         margin: 60vh 0 0 -10vw;
-        max-width: 60vw;
+        min-width: 60vw;
     }
     h2,
     p {
         color: white;
     }
-    #project-board-center-container {
-        margin-top: 10vh;
+    #project-text-container {
+        margin-top: 60vh;
+        right: 0;
     }
     .center-env {
         padding-top: 50vh;

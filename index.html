@@ -73,9 +73,9 @@
         <div id="project-board" class="container-fluid position-relative">
             <div id="project-board-items" class="row">
                 <div class="col-6">
-                    <img src="imgs/Assets/Designs/Project%20Board%20Components.svg" />
+                    <img id="pComponents" src="imgs/Assets/Designs/Project%20Board%20Components.svg" />
                 </div>
-                <div class="col-6 center-container" data-scroll-speed="8">
+                <div id="project-text-container" class="col-6 ml-auto center-container position-absolute" data-scroll-speed="8">
                     <div class="center-env">
                         <h2>DIYHACKS<br/> PROJECT BOARD</h2>
                         <p>With our campus-specific Project Board, you can find interesting projects and reach out to people who are as excited as you are about each idea.
@@ -139,10 +139,10 @@
                 </div>
                 <div class="col-6">
                     <div class="profile-row row">
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <img class="img-fluid" src="imgs/Assets/Icons/Aliah.svg" />
                         </div>
-                        <div class="col-md-8 my-auto">
+                        <div class="col-8 my-auto">
                             <div class="center-env">
                                 <h3>Aliah Shaira De Guzman</h3>
                                 <p>Back-End Development | Project Management</p>
@@ -172,10 +172,10 @@
                         </div>
                     </div>
                     <div class="profile-row row">
-                        <div class="col-md-4">
+                        <div class="col-4">
                             <img class="img-fluid" src="imgs/Assets/Designs/SamProf.svg" />
                         </div>
-                        <div class="col-md-8 my-auto">
+                        <div class="col-8 my-auto">
                             <div class="center-env">
                                 <h3>Samuel Anozie</h3>
                                 <p>UI Design | Full-Stack Development | Project Management</p>
@@ -186,13 +186,18 @@
                                         </a>
                                     </div>
                                     <div class="col-2 center-container-nm">
-                                        <a href="http://sanozie.github.io">
+                                        <a href="http://github.com/sanozie">
                                             <img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" />
                                         </a>
                                     </div>
                                     <div class="col-2 center-container-nm">
                                         <a href="mailto:sanoziec@gmail.com">
                                             <img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" />
+                                        </a>
+                                    </div>
+                                    <div class="col-2 center-container-nm">
+                                        <a href="http://sanozie.github.io">
+                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/earth-globe.svg" />
                                         </a>
                                     </div>
                                 </div>
@@ -263,13 +268,10 @@
                         <input type="submit" class="btn btn-primary order-md-1" value="SUBMIT" name="submit" />
                         <button id="closeMail" class="btn btn-tertiary order-md-2" type="button">CLOSE</button><br/>
                     </div>
-
                 </form>
-
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

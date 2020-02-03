@@ -153,24 +153,64 @@ $(function() {
         $("#blur").removeClass("active-blur").addClass("inactive-blur");
         $("#invisible").removeClass("active-mailing").addClass("inactive-mailing");
     });
-	
-	
-	//Responsiveness
-	window.addEventListener("resize", function() {
-		//If window is bigger than hero background image
-		if($(window).width() > 1536) {
-			$("#hero-back-image").width($(window).width());
-		}
-		
-		//Putting the hero-image-col as the background if display is small
-		if($(window).width() < 900) {
-			$("#hero-text-container > .col-6").removeClass("col-6").addClass("position-absolute");
-			$("#hero-text").addClass("text-center").addClass("hovered").addClass("col-12");
-			$("#hero-img-container").addClass("lowered").addClass("col-8").css({
-				"top": "30%",
-				"left": "30%"
-			});
-			$("#hero-text-container")
-		}
-	})
+
+
+    //Responsiveness
+    window.addEventListener("resize", function() {
+        //If window is bigger than hero background image
+        if ($(window).width() > 1536) {
+            $("#hero-back-image").width($(window).width());
+        } else {
+            $("#hero-back-image").width(1536);
+        }
+
+        if ($(window).width() < 900) {
+            //Putting the hero-image-col as the background if display is small
+            $("#hero-img-container").removeClass("col-6").addClass("position-absolute");
+            $("#hero-text").addClass("text-center").addClass("hovered").addClass("col-12");
+            $("#hero-img-container").addClass("lowered").addClass("col-8").css({
+                "top": "30%",
+                "left": "30%"
+            });
+
+            //Adding margin to slack
+            $("#slack").css("margin-top", "50%")
+        } else {
+            $("#hero-img-container").removeClass("position-absolute").addClass("col-6");
+            $("#hero-text").removeClass("text-center").removeClass("hovered").removeClass("col-12");
+            $("#hero-img-container").removeClass("lowered").removeClass("col-8").addClass("col-4").css({
+                "top": "0",
+                "left": "0"
+            });
+
+            $("#slack").css("margin-top", "20%")
+        }
+
+        //fixing project board 
+        if ($(window).width() < 1330) {
+            $("#pComponents").css("opacity", "0.3");
+            $("#project-text-container").css({
+                "text-align": "center",
+                "right": "25%"
+            });
+        } else {
+            $("#pComponents").css("opacity", "1");
+            $("#project-text-container").css({
+                "text-align": "left",
+                "right": 0
+            });
+        }
+
+        if ($(window).width() < 768) {
+            $("#night-text-containter").css({
+                "text-align": "center",
+                "padding": 0
+            });
+        } else {
+            $("#night-text-containter").css({
+                "text-align": "left",
+                "padding-left": "5rem"
+            });
+        }
+    })
 });
