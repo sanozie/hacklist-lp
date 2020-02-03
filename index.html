@@ -1,204 +1,275 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <title>DIYHacks</title>
-    <meta name="author" content="DIYHacks Team - Samuel Anozie">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<meta charset="utf-8">
+		<title>DIYHacks</title>
+		<meta name="author" content="DIYHacks Team - Samuel Anozie">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap Links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<!-- Bootstrap Links -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!--Anime.js-->
-    <script src="anime.min.js"></script>
+		<!--Anime.js-->
+		<script src="anime.min.js"></script>
 
-    <!--Styles-->
-    <link rel="stylesheet" href="styles.css">
+		<!--Styles-->
+		<link rel="stylesheet" href="styles.css">
 
-    <!--JS-->
-    <script src="script.js"></script>
-</head>
+		<!--JS-->
+		<script src="script.js"></script>
+	</head>
 
-<body>
-    <div id="hero" class="container-fluid position-relative">
-        <img class="img-fluid" src="imgs/Backgrounds/HeroSectionBack.svg" />
-        <div id="hero-text-container" class="row position-absolute">
-            <div class="col-6 center-container">
-                <div class="center-env">
-                    <h1>A COMMUNITY PLATFORM FOR PRODUCT DEVELOPMENT</h1>
-                    <p>Introducing DIYHacks, the online center for college students invested in building projects.</p>
-                </div>
-            </div>
-            <div id="hero-img-container" class="col-6 position-relative">
-                <div id="hero-rotated-row" class="row poster">
-                    <div id="hero-img-col-1" class="hero-img-col col-4 position-relative"></div>
-                    <div id="hero-img-col-2" class="hero-img-col col-4 position-relative"></div>
-                    <div id="hero-img-col-3" class="hero-img-col col-4 position-relative"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="about" class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-3">
-                <img class="img-fluid" src="imgs/Assets/Designs/Lightbulb.svg" data-scroll-speed="10" />
-            </div>
-            <div class="col-6 center-container">
-                <div class="row justify-content-center text-center">
-                    <h2 class="colored-text">DECENTRALIZING<br/> THE<br/> COLLEGE HACKATHON</h2>
-                    <p>Surround yourself with those that build the future. By teaming up with motivated <span class="colored-text enphasis">developers, designers, and product managers,</span> we help you make your ideas a <span class="colored-text enphasis">reality.</span></p>
-                    <button class="btn btn-primary">GET STARTED</button>
-                </div>
-            </div>
-            <div class="col-3 center-container">
-                <img class="img-fluid" src="imgs/Assets/Designs/Gears.svg" data-scroll-speed="9.75">
-            </div>
-        </div>
-    </div>
-    <div id="project-board" class="container-fluid position-relative">
-        <div id="project-board-items" class="row">
-            <div class="col-6">
-                <img src="imgs/Assets/Designs/Project%20Board%20Components.svg" />
-            </div>
-            <div class="col-6 center-container" data-scroll-speed="8">
-                <div class="center-env">
-                    <h2>DIYHACKS<br/> PROJECT BOARD</h2>
-                    <p>With our campus-specific Project Board, you can find interesting projects and reach out to people who are as excited as you are about each idea.
-                        <span class="bold">Launching Beta Fall 2020.</span></p>
-                    <button class="btn btn-secondary">LEARN MORE</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="hack-nights" class="container-fluid position-relative">
-        <div id="topWaves" class="container-fluid position-absolute">
-            <svg class="top-wave lowerWave" xmlns="http://www.w3.org/2000/svg" width="1919.848" height="248.217" viewBox="0 0 1919.848 248.217">
-                <path d="M-263.066-79.877S-53.79-10.068,234.556,30.994,1656.782,168.335,1656.782,168.335l-1919.848,0Z" transform="translate(263.066 79.877)" fill="#222"/>
-            </svg>
-            <svg class="top-wave upperWave" xmlns="http://www.w3.org/2000/svg" width="1924.068" height="237.324" viewBox="0 0 1924.068 237.324">
-                <path d="M-37.046,917.324h0l-1924.069,0c.433-.006,55.3-.736,141.953-3.138,51.1-1.416,103.313-3.131,155.185-5.1,64.809-2.456,129.252-5.313,191.539-8.492,158.516-8.09,304.127-18.284,432.789-30.3,76.387-7.134,147.571-15,211.574-23.374,34.4-4.5,67.4-9.24,98.09-14.085,32.085-5.065,62.529-10.386,90.486-15.815,104.7-20.33,201.524-40.184,287.781-59.011,69.005-15.061,131.443-29.5,185.577-42.923,48.158-11.939,80.7-20.843,99.51-26.211,20.271-5.783,29.5-8.846,29.584-8.875V917.323Z" transform="translate(1961.114 -680)" fill="#2b2b2b"/>
-            </svg>
-        </div>
-        <div id="night-text-containter" class="row">
-            <div class="col-md-6 center-container">
-                <div class="center-env">
-                    <h2><sup>DIY</sup>HackNights</h2>
-                    <p>Casual meet-ups of the DIYHacks community to socialize and/or work on projects. Chill at various places around campus, and make sure to bring some food. We like to share. (Don't forget drinks)</p><br/>
-                    <button class="btn btn-primary">SIGN UP</button>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <img class="img-fluid" src="imgs/Assets/Designs/Moon.svg" />
-            </div>
-        </div>
-        <div id="bottomWaves" class="container-fluid position-absolute">
-            <svg class="bottom-wave lowerWave" xmlns="http://www.w3.org/2000/svg" width="1919.848" height="248.217" viewBox="0 0 1919.848 248.217">
-                    <path d="M-263.066-79.877S-53.79-10.068,234.556,30.994,1656.782,168.335,1656.782,168.335l-1919.848,0Z" transform="translate(263.066 79.877)" fill="#222"/>
-                </svg>
-            <svg class="bottom-wave upperWave" xmlns="http://www.w3.org/2000/svg" width="1924.068" height="237.324" viewBox="0 0 1924.068 237.324">
-                    <path d="M-37.046,917.324h0l-1924.069,0c.433-.006,55.3-.736,141.953-3.138,51.1-1.416,103.313-3.131,155.185-5.1,64.809-2.456,129.252-5.313,191.539-8.492,158.516-8.09,304.127-18.284,432.789-30.3,76.387-7.134,147.571-15,211.574-23.374,34.4-4.5,67.4-9.24,98.09-14.085,32.085-5.065,62.529-10.386,90.486-15.815,104.7-20.33,201.524-40.184,287.781-59.011,69.005-15.061,131.443-29.5,185.577-42.923,48.158-11.939,80.7-20.843,99.51-26.211,20.271-5.783,29.5-8.846,29.584-8.875V917.323Z" transform="translate(1961.114 -680)" fill="#2b2b2b"/>
-                </svg>
-        </div>
-    </div>
-    <div id="slack" class="container-fluid position-relative">
-        <div class="row justify-content-center">
-            <div class="col-5 text-center">
-                <h2>DIYHACKS <br/>SLACK CHANNEL</h2>
-                <p>Meet through #introductions, discuss #project-ideas, and share #resources online, enabling you to be part of a dev community without leaving the confines of your room.</p>
-                <button class="btn btn-primary">SIGN UP</button>
-            </div>
-        </div>
-        <div id="slack-svg-div" class="row justify-content-center">
-            <div class="col-9">
-                <svg data-scroll-speed="10" class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="1142.298" height="642.185" viewBox="0 0 1142.298 642.185"><g transform="translate(-394.124 -6527.26)"><path d="M234.074,62.756c168.731-65,259.672-55.444,345.28,0,110.311,71.443,35.2,132.138,35.2,206.8,0,132.854,48.986,325.62-108.222,325.62S150.264,396.364,46.979,285.515,65.344,127.757,234.074,62.756Z" transform="translate(385.228 6574.267)" fill="#ecb22e"/><path d="M240.143,127.015c136.118-36.742,215.614-14.773,301.222,45.53,44.516,31.358,40.856,161.232,40.856,161.232s3.186,150.89-21.935,178.536c-53.564,58.947-381.611-29.234-484.9-149.8S104.024,163.757,240.143,127.015Z" transform="translate(767.228 6418.267)" fill="#36c5f0"/><path d="M234.074,56.648C402.8.424,493.745,8.69,579.354,56.648c110.311,61.8,69.436,81.742,69.436,146.325,0,114.915-65.475,267.018-222.683,267.018s-117.594,22.92-220.878-72.96S65.344,112.872,234.074,56.648Z" transform="translate(880.228 6635.267)" fill="#e01e5a"/><g transform="translate(-716 -130)"><path d="M3136.408,692.661C2988.484,602.83,2863,610.3,2863,484.573S2963.284,47.74,3136.408,150.457s260.464,259.826,249.935,390.4c-7.872,97.622-61.01,184.333-149.134,184.345C3207.46,725.208,3173.741,715.332,3136.408,692.661Z" transform="translate(-1463.467 6527.261)" fill="#2eb67d"/><g transform="translate(1524.671 6818.204)"><g transform="translate(0.218 144.288)"><path d="M120.341,157.57a28.77,28.77,0,1,1-28.77-28.77h28.77Z" transform="translate(-62.8 -128.8)" fill="#fff"/><path d="M95.8,157.57a28.77,28.77,0,0,1,57.541,0V229.5a28.77,28.77,0,1,1-57.541,0Z" transform="translate(-23.874 -128.8)" fill="#fff"/></g><path d="M124.571,120.141a28.77,28.77,0,1,1,28.77-28.77v28.77Z" transform="translate(-23.656 -62.6)" fill="#fff"/><path d="M163.615,95.7a28.77,28.77,0,0,1,0,57.541H91.47a28.77,28.77,0,1,1,0-57.541Z" transform="translate(-62.7 -23.556)" fill="#fff"/><g transform="translate(144.288)"><path d="M161.9,124.47a28.77,28.77,0,1,1,28.77,28.77H161.9Z" transform="translate(-89.974 -23.556)" fill="#fff"/><path d="M186.441,163.515a28.77,28.77,0,1,1-57.541,0V91.371a28.77,28.77,0,1,1,57.541,0Z" transform="translate(-128.9 -62.6)" fill="#fff"/></g><g transform="translate(144.288 144.288)"><path d="M157.67,161.8a28.77,28.77,0,1,1-28.77,28.77V161.8Z" transform="translate(-128.9 -89.874)" fill="#fff"/><path d="M157.67,186.341a28.77,28.77,0,1,1,0-57.541h72.144a28.77,28.77,0,0,1,0,57.541Z" transform="translate(-128.9 -128.8)" fill="#fff"/></g></g></g></g></svg>
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="container-fluid position-relative">
-        <div class="row justify-content-center">
-            <div class="col-4 text-right center-container-nm">
-                <div class="center-env">
-                    <h2>CONNECT<br/>WITH<br/>US</h2>
-                    <p>Reach out to us for any reason!<br/> We'd love to get to know you.</p>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row profile-row">
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="imgs/Assets/Icons/Aliah.svg" />
-                    </div>
-                    <div class="col-md-8">
-                        <h3>Aliah Shaira De Guzman</h3>
-                        <p>UX Research | Back-End Development | Project Management</p>
-                        <div class="row prof-icon-row justify-content-center">
-                            <div class="col-2 center-container-nm">
-                                <a href="https://twitter.com/nerizoned">
-                                    <img class="img-fluid profile-icon" src="imgs/Assets/Icons/Twitter.svg" />
-                                </a>
-                            </div>
-                            <div class="col-2 center-container-nm">
-                                <a href="https://www.linkedin.com/in/aliahdg/">
-                                    <img class="img-fluid profile-icon" src="imgs/Assets/Icons/linkedin.svg" />
-                                </a>
-                            </div>
-                            <div class="col-2 center-container-nm">
-                                <a href="https://github.com/aidigii">
-                                    <img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" />
-                                </a>
-                            </div>
-                            <div class="col-2 center-container-nm">
-                                <a href="mailto:asndeguzman@gmail.com">
-                                    <img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row profile-row">
-                    <div class="col-md-4">
-                        <img class="img-fluid" src="imgs/Assets/Designs/SamProf.svg" />
-                    </div>
-                    <div class="col-md-8">
-                        <h3>Samuel Anozie</h3>
-                        <p>UI Design | Full-Stack Development | Project Management</p>
-                        <div class="row justify-content-center prof-icon-row">
-                            <div class="col-2 center-container-nm">
-                                <a href="http://linkedin.com/in/samanozie">
-                                    <img class="img-fluid profile-icon" src="imgs/Assets/Icons/linkedin.svg" />
-                                </a>
-                            </div>
-                            <div class="col-2 center-container-nm">
-                                <a href="http://sanozie.github.io">
-                                    <img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" />
-                                </a>
-                            </div>
-                            <div class="col-2 center-container-nm">
-                                <a href="mailto:sanoziec@gmail.com">
-                                    <img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer" class="container-fluid center-container-nm">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-6 text-right footer-col">
-                        <p id="footerLogo">DIYHACKS</p>
-                    </div>
-                    <!--Maybe put copywrite-->
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+	<body>
+		<div id="blur" class="inactive-blur">
+			<div id = "hero-back" class = "container-fluid position-relative">
+				<div id = "hero-back-container position-absolute">
+					<img id = "hero-back-image" src="imgs/Backgrounds/HeroSectionBack.svg" />
+				</div>
+			</div>
+			<div id="hero" class="container-fluid position-absolute">
+				<div id="hero-text-container" class="row position-absolute justify-content-center">
+					<div id = "hero-text" class="col-4 center-container">
+						<div class="center-env">
+							<h1>COMMUNITY PLATFORM FOR PRODUCT DEVELOPMENT</h1>
+							<p>Introducing DIYHacks, the online center for college students invested in building projects.</p>
+						</div>
+					</div>
+					<div id="hero-img-container" class="col-6 position-relative">
+						<div id="hero-rotated-row" class="row poster">
+							<div id="hero-img-col-1" class="hero-img-col col-4 position-relative"></div>
+							<div id="hero-img-col-2" class="hero-img-col col-4 position-relative"></div>
+							<div id="hero-img-col-3" class="hero-img-col col-4 position-relative"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="about" class="container-fluid">
+				<div class="row justify-content-center">
+					<div class="col-3">
+						<img class="img-fluid" src="imgs/Assets/Designs/Lightbulb.svg" data-scroll-speed="10" />
+					</div>
+					<div class="col-6">
+						<div class="row justify-content-center text-center">
+							<h2 class="colored-text">DECENTRALIZING<br/> THE<br/> COLLEGE HACKATHON</h2>
+							<p>Surround yourself with those that build the future. By teaming up with motivated <span class="colored-text enphasis">developers, designers, and product managers,</span> we help you make your ideas a <span class="colored-text enphasis">reality.</span></p>
+							<button class="btn btn-primary">GET STARTED</button>
+						</div>
+						<div id="whatWeDo" class="row justify-content-center">
+							<div class="col-4 text-center p-0">
+								<h4 class = "w-100">WHAT WE DO</h4>
+								<img class="img-fluid" src="imgs/Assets/Designs/Arrow.svg" />
+							</div>
+						</div>
+					</div>
+					<div class="col-3 center-container">
+						<img class="img-fluid" src="imgs/Assets/Designs/Gears.svg" data-scroll-speed="6">
+					</div>
+				</div>
+			</div>
+			<div id="project-board" class="container-fluid position-relative">
+				<div id="project-board-items" class="row">
+					<div class="col-6">
+						<img src="imgs/Assets/Designs/Project%20Board%20Components.svg" />
+					</div>
+					<div class="col-6 center-container" data-scroll-speed="8">
+						<div class="center-env">
+							<h2>DIYHACKS<br/> PROJECT BOARD</h2>
+							<p>With our campus-specific Project Board, you can find interesting projects and reach out to people who are as excited as you are about each idea.
+								<span class="bold">Launching Beta Fall 2020.</span></p>
+							<button class="btn btn-secondary">LEARN MORE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="hack-nights" class="container-fluid position-relative">
+				<div id="topWaves" class="container-fluid position-absolute">
+					<svg class="top-wave lowerWave" xmlns="http://www.w3.org/2000/svg" width="1919.848" height="248.217" viewBox="0 0 1919.848 248.217">
+						<path d="M-263.066-79.877S-53.79-10.068,234.556,30.994,1656.782,168.335,1656.782,168.335l-1919.848,0Z" transform="translate(263.066 79.877)" fill="#222"/>
+					</svg>
+					<svg class="top-wave upperWave" xmlns="http://www.w3.org/2000/svg" width="1924.068" height="237.324" viewBox="0 0 1924.068 237.324">
+						<path d="M-37.046,917.324h0l-1924.069,0c.433-.006,55.3-.736,141.953-3.138,51.1-1.416,103.313-3.131,155.185-5.1,64.809-2.456,129.252-5.313,191.539-8.492,158.516-8.09,304.127-18.284,432.789-30.3,76.387-7.134,147.571-15,211.574-23.374,34.4-4.5,67.4-9.24,98.09-14.085,32.085-5.065,62.529-10.386,90.486-15.815,104.7-20.33,201.524-40.184,287.781-59.011,69.005-15.061,131.443-29.5,185.577-42.923,48.158-11.939,80.7-20.843,99.51-26.211,20.271-5.783,29.5-8.846,29.584-8.875V917.323Z" transform="translate(1961.114 -680)" fill="#2b2b2b"/>
+					</svg>
+				</div>
+				<div id="night-text-containter" class="row">
+					<div class="col-md-6 center-container">
+						<div class="center-env">
+							<h2><sup>DIY</sup>HackNights</h2>
+							<p>Casual meet-ups of the DIYHacks community to socialize and/or work on projects. Chill at various places around campus, and make sure to bring some food. We like to share. (Don't forget drinks)</p><br/>
+							<button class="btn btn-primary">SIGN UP</button>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img class="img-fluid" src="imgs/Assets/Designs/Moon.svg" />
+					</div>
+				</div>
+				<div id="bottomWaves" class="container-fluid position-absolute">
+					<svg class="bottom-wave lowerWave" xmlns="http://www.w3.org/2000/svg" width="1919.848" height="248.217" viewBox="0 0 1919.848 248.217">
+						<path d="M-263.066-79.877S-53.79-10.068,234.556,30.994,1656.782,168.335,1656.782,168.335l-1919.848,0Z" transform="translate(263.066 79.877)" fill="#222"/>
+					</svg>
+					<svg class="bottom-wave upperWave" xmlns="http://www.w3.org/2000/svg" width="1924.068" height="237.324" viewBox="0 0 1924.068 237.324">
+						<path d="M-37.046,917.324h0l-1924.069,0c.433-.006,55.3-.736,141.953-3.138,51.1-1.416,103.313-3.131,155.185-5.1,64.809-2.456,129.252-5.313,191.539-8.492,158.516-8.09,304.127-18.284,432.789-30.3,76.387-7.134,147.571-15,211.574-23.374,34.4-4.5,67.4-9.24,98.09-14.085,32.085-5.065,62.529-10.386,90.486-15.815,104.7-20.33,201.524-40.184,287.781-59.011,69.005-15.061,131.443-29.5,185.577-42.923,48.158-11.939,80.7-20.843,99.51-26.211,20.271-5.783,29.5-8.846,29.584-8.875V917.323Z" transform="translate(1961.114 -680)" fill="#2b2b2b"/>
+					</svg>
+				</div>
+			</div>
+			<div id="slack" class="container-fluid position-relative">
+				<div class="row justify-content-center">
+					<div class="col-5 text-center">
+						<h2>DIYHACKS <br/>SLACK CHANNEL</h2>
+						<p>Meet through #introductions, discuss #project-ideas, and share #resources online, enabling you to be part of a dev community without leaving the confines of your room.</p>
+						<button class="btn btn-primary">SIGN UP</button>
+					</div>
+				</div>
+				<div id="slack-svg-div" class="row justify-content-center">
+					<div class="col-9 text-center">
+						<svg data-scroll-speed="10" class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="1142.298" height="642.185" viewBox="0 0 1142.298 642.185"><g transform="translate(-394.124 -6527.26)"><path d="M234.074,62.756c168.731-65,259.672-55.444,345.28,0,110.311,71.443,35.2,132.138,35.2,206.8,0,132.854,48.986,325.62-108.222,325.62S150.264,396.364,46.979,285.515,65.344,127.757,234.074,62.756Z" transform="translate(385.228 6574.267)" fill="#ecb22e"/><path d="M240.143,127.015c136.118-36.742,215.614-14.773,301.222,45.53,44.516,31.358,40.856,161.232,40.856,161.232s3.186,150.89-21.935,178.536c-53.564,58.947-381.611-29.234-484.9-149.8S104.024,163.757,240.143,127.015Z" transform="translate(767.228 6418.267)" fill="#36c5f0"/><path d="M234.074,56.648C402.8.424,493.745,8.69,579.354,56.648c110.311,61.8,69.436,81.742,69.436,146.325,0,114.915-65.475,267.018-222.683,267.018s-117.594,22.92-220.878-72.96S65.344,112.872,234.074,56.648Z" transform="translate(880.228 6635.267)" fill="#e01e5a"/><g transform="translate(-716 -130)"><path d="M3136.408,692.661C2988.484,602.83,2863,610.3,2863,484.573S2963.284,47.74,3136.408,150.457s260.464,259.826,249.935,390.4c-7.872,97.622-61.01,184.333-149.134,184.345C3207.46,725.208,3173.741,715.332,3136.408,692.661Z" transform="translate(-1463.467 6527.261)" fill="#2eb67d"/><g transform="translate(1524.671 6818.204)"><g transform="translate(0.218 144.288)"><path d="M120.341,157.57a28.77,28.77,0,1,1-28.77-28.77h28.77Z" transform="translate(-62.8 -128.8)" fill="#fff"/><path d="M95.8,157.57a28.77,28.77,0,0,1,57.541,0V229.5a28.77,28.77,0,1,1-57.541,0Z" transform="translate(-23.874 -128.8)" fill="#fff"/></g><path d="M124.571,120.141a28.77,28.77,0,1,1,28.77-28.77v28.77Z" transform="translate(-23.656 -62.6)" fill="#fff"/><path d="M163.615,95.7a28.77,28.77,0,0,1,0,57.541H91.47a28.77,28.77,0,1,1,0-57.541Z" transform="translate(-62.7 -23.556)" fill="#fff"/><g transform="translate(144.288)"><path d="M161.9,124.47a28.77,28.77,0,1,1,28.77,28.77H161.9Z" transform="translate(-89.974 -23.556)" fill="#fff"/><path d="M186.441,163.515a28.77,28.77,0,1,1-57.541,0V91.371a28.77,28.77,0,1,1,57.541,0Z" transform="translate(-128.9 -62.6)" fill="#fff"/></g><g transform="translate(144.288 144.288)"><path d="M157.67,161.8a28.77,28.77,0,1,1-28.77,28.77V161.8Z" transform="translate(-128.9 -89.874)" fill="#fff"/><path d="M157.67,186.341a28.77,28.77,0,1,1,0-57.541h72.144a28.77,28.77,0,0,1,0,57.541Z" transform="translate(-128.9 -128.8)" fill="#fff"/></g></g></g></g></svg>
+					</div>
+				</div>
+			</div>
+			<div id="contact" class="container-fluid position-relative">
+				<div class="row justify-content-center">
+					<div class="col-4 text-right center-container-nm">
+						<div class="center-env">
+							<h2>CONNECT<br/>WITH<br/>US</h2>
+							<p>Reach out to us for any reason!<br/> We'd love to get to know you.</p>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="profile-row row">
+							<div class="col-md-4">
+								<img class="img-fluid" src="imgs/Assets/Icons/Aliah.svg" />
+							</div>
+							<div class="col-md-8 my-auto">
+								<div class="center-env">
+									<h3>Aliah Shaira De Guzman</h3>
+									<p>Back-End Development | Project Management</p>
+									<div class="row prof-icon-row ">
+										<div class="col-2 center-container-nm">
+											<a href="https://twitter.com/nerizoned">
+												<img class="img-fluid profile-icon" src="imgs/Assets/Icons/Twitter.svg" />
+											</a>
+										</div>
+										<div class="col-2 center-container-nm">
+											<a href="https://www.linkedin.com/in/aliahdg/">
+												<img class="img-fluid profile-icon" src="imgs/Assets/Icons/linkedin.svg" />
+											</a>
+										</div>
+										<div class="col-2 center-container-nm">
+											<a href="https://github.com/aidigii">
+												<img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" />
+											</a>
+										</div>
+										<div class="col-2 center-container-nm">
+											<a href="mailto:asndeguzman@gmail.com">
+												<img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="profile-row row">
+							<div class="col-md-4">
+								<img class="img-fluid" src="imgs/Assets/Designs/SamProf.svg" />
+							</div>
+							<div class="col-md-8 my-auto">
+								<div class="center-env">
+									<h3>Samuel Anozie</h3>
+									<p>UI Design | Full-Stack Development | Project Management</p>
+									<div class="row prof-icon-row">
+										<div class="col-2 center-container-nm">
+											<a href="http://linkedin.com/in/samanozie">
+												<img class="img-fluid profile-icon" src="imgs/Assets/Icons/linkedin.svg" />
+											</a>
+										</div>
+										<div class="col-2 center-container-nm">
+											<a href="http://sanozie.github.io">
+												<img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" />
+											</a>
+										</div>
+										<div class="col-2 center-container-nm">
+											<a href="mailto:sanoziec@gmail.com">
+												<img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer" class="container-fluid center-container-nm">
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-6 text-right footer-col">
+								<p id="footerLogo">DIYHACKS</p>
+							</div>
+							<!--Maybe put copywrite-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="invisible" class="container-fluid d-flex align-items-center inactive-mailing justify-content-center">
+			<div class="row">
+				<div class="col-12">
+					<h1>SIGN UP FOR <br/> OUR MAILING LIST</h1>
+				</div>
+			</div>
+			<div id="formRow" class="row justify-content-center">
+				<div class="col-12">
+					<form id="mailForm">
+						<div class="form-group form-inline row">
+							<label for="name" class="col-sm-2 col-form-label">Full Name</label>
+							<div class="col-sm-5 input-col position-relative">
+								<div class="gradient-border position-absolute"></div>
+								<input name="firstName" type="text" class="form-control w-100" placeholder="First" required>
+							</div>
+							<div class="col-sm-5 input-col">
+								<div class="gradient-border position-absolute"></div>
+								<input name="lastName" type="text" class="form-control w-100" placeholder="Last" required>
+							</div>
+						</div>
+						<div class="form-group form-inline row">
+							<label for="email" class="col-sm-2 col-form-label">Email</label>
+							<div class="col-sm-10 input-col">
+								<div class="gradient-border position-absolute"></div>
+								<input type="text" name="email" class="form-control w-100" placeholder="codicoder@coolstuff.com" required>
+							</div>
+						</div>
+						<div class="form-group form-inline row">
+							<label for="confEmail" class="col-sm-2 col-form-label">Confirm Email</label>
+							<div class="col-sm-10 input-col">
+								<div class="gradient-border position-absolute"></div>
+								<input type="text" name="confEmail" class="form-control w-100" required>
+							</div>
+						</div>
+						<div class="row justify-content-center align-items-center">
+							<p>Would you like to join our <br/>Slack Community?</p> <input id="slackCheck" type="checkbox" />
+						</div>
+						<div id="slackEmailRow" class="form-group form-inline row">
+							<label for="slackEmail" class="col-sm-2 col-form-label">Slack Email</label>
+							<div class="col-sm-10 input-col">
+								<div class="gradient-border position-absolute"></div>
+								<input type="text" name="slackEmail" class="form-control w-100" required>
+							</div>
+						</div>
+						<div class="row justify-content-center">
+							<button id="closeMail" class="btn btn-tertiary" type="button">CLOSE</button><br/>
+							<input type="submit" class="btn btn-primary" value="SUBMIT" name="submit" />
+						</div>
+
+					</form>
+
+				</div>
+			</div>
+		</div>
+
+	</body>
 
 </html>

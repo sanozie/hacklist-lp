@@ -1,5 +1,4 @@
 //Animation
-
 const herodata = [
     [
         "imgs/Assets/Icons/cloud.svg",
@@ -134,7 +133,44 @@ $(function() {
             this.el.css('transform', 'translateY(' + ((scrollTop - top_of_element) / this.speed) + 'px)');
         }
     };
-
-
     $('[data-scroll-speed]').moveIt();
+
+
+    //Making focus animation on form
+    $(".form-control").click(function() {
+        $(".gradient-border").fadeOut(150);
+        $(this).prev().fadeToggle(200)
+    })
+    $("#slackCheck").click(function() {
+            $("#slackEmailRow").toggle(200).css("display", "flex");
+        })
+        //Loading in mail form
+    $("button").click(function() {
+        $("#blur").removeClass("inactive-blur").addClass("active-blur");
+        $("#invisible").removeClass("inactive-mailing").addClass("active-mailing");
+    })
+    $("#closeMail").click(function() {
+        $("#blur").removeClass("active-blur").addClass("inactive-blur");
+        $("#invisible").removeClass("active-mailing").addClass("inactive-mailing");
+    });
+	
+	
+	//Responsiveness
+	window.addEventListener("resize", function() {
+		//If window is bigger than hero background image
+		if($(window).width() > 1536) {
+			$("#hero-back-image").width($(window).width());
+		}
+		
+		//Putting the hero-image-col as the background if display is small
+		if($(window).width() < 900) {
+			$("#hero-text-container > .col-6").removeClass("col-6").addClass("position-absolute");
+			$("#hero-text").addClass("text-center").addClass("hovered").addClass("col-12");
+			$("#hero-img-container").addClass("lowered").addClass("col-8").css({
+				"top": "30%",
+				"left": "30%"
+			});
+			$("#hero-text-container")
+		}
+	})
 });

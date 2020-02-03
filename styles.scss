@@ -5,7 +5,7 @@ $primaryFont: 'Anton',
 sans-serif;
 $subFont: 'Raleway',
 sans-serif;
-//Misc
+
 //Mixins
 @mixin center {
     margin: auto;
@@ -22,6 +22,14 @@ sans-serif;
 
 @mixin poster {
     position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin poster-fixed {
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
@@ -47,6 +55,10 @@ body {
 
 .poster {
     @include poster;
+}
+
+.poster-fixed {
+    @include poster-fixed;
 }
 
 .center-container-nm {
@@ -77,13 +89,217 @@ body {
     color: white;
     font-family: $primaryFont;
     border: none;
-    padding: .8rem 2rem;
     font-size: 1.3rem;
+	transition: 0.2s ease-in;
+}
+.btn-primary:hover {
+	opacity: 0.7;
 }
 
 .btn-secondary {
     background-color: white;
     color: gray;
+}
+
+.btn-tertiary {
+    background: none;
+	border: none;
+	font-size: 1.3rem;
+    color: white;
+}
+#blur {
+    z-index: 10;
+    height: 100vh;
+    transition: opacity 0.3s ease-out;
+    will-change: opacity;
+    @include poster;
+}
+
+.active-blur {
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+.active-mailing {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.inactive-blur {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.inactive-mailing {
+    visibility: visible;
+    opacity: 0;
+    pointer-events: none;
+}
+.hovered {
+	z-index: 10;
+}
+.lowered {
+	z-index: 5;
+	opacity: 0.3;
+}
+//Main Divs
+#invisible {
+    text-align: center;
+    padding: 5%;
+    position: fixed;
+    height: 60%;
+    top: 20%;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.678);
+    transition: opacity 0.3s ease-out;
+    will-change: opacity;
+    color: white;
+}
+#hero-back {
+	width: 100vw;
+	height: auto;
+	overflow-x: hidden;
+	img {
+		width: 1536px;
+	}
+}
+#hero {
+	top: 0;
+}
+#about {
+    margin: 8rem 0;
+}
+
+#project-board {
+    background-image: url('imgs/Backgrounds/ProjectBoardBack.svg');
+    background-size: cover;
+}
+
+#hack-nights {
+    background-color: #2B2B2B;
+    color: white;
+}
+
+#slack {
+    margin-top: 20%;
+    //Eventually make this javascript based, to make sure to clear the svg overhead. Or change structure
+}
+
+#contact {
+    background-image: url("imgs/Backgrounds/ContactBack.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40%;
+    padding-bottom: 20%;
+    color: white;
+}
+
+#footer {
+    background-color: black;
+    height: 10vh;
+}
+
+//Items
+#hero-text-container {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    color: white;
+    overflow: hidden;
+    #hero-img-container {
+        height: 100%;
+        padding: 0;
+        #hero-rotated-row {
+            transform: rotate(-20deg);
+            margin-top: -15vh;
+            .hero-img-col {
+                padding: 0 3vw 0 3vw;
+            }
+            .hero-img {
+                padding: calc(1rem + 1.5vw) 0 calc(1rem + 1.5vw) 0;
+                min-width: 40px;
+                transform: translate(1px);
+                transition: transform 5s linear;
+                width: 100%;
+            }
+        }
+    }
+}
+
+#project-board-items {
+    img {
+        height: 150vh;
+        margin: 60vh 0 0 -10vw;
+        max-width: 60vw;
+    }
+    h2,
+    p {
+        color: white;
+    }
+    #project-board-center-container {
+        margin-top: 10vh;
+    }
+    .center-env {
+        padding-top: 50vh;
+    }
+}
+
+#night-text-containter {
+    padding-left: 5rem;
+}
+
+#whatWeDo {
+    margin-top: 20%;
+    margin-bottom: -50%;
+    opacity: 0.3;
+}
+
+.profile-row {
+    margin: 5% 0 5% 0%;
+}
+
+.profile-icon {
+    width: 80%;
+}
+
+.footer-col {
+    margin: auto 0 auto 0;
+    #footerLogo {
+        font-family: $primaryFont;
+    }
+    p {
+        color: white;
+        display: inline;
+    }
+}
+
+//Forms 
+#formRow {
+    padding-right: 1rem;
+}
+
+.form-control {
+    margin: 3px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.input-col {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.gradient-border {
+    @include poster;
+    z-index: 1;
+    border-radius: .25rem;
+    display: none;
+    background-image: linear-gradient(to right top, #dd00ff, #00bdff, #50e3c1);
+}
+
+#slackEmailRow {
+    display: none;
 }
 
 //SVG's
@@ -130,109 +346,6 @@ body {
     height: 20%;
 }
 
-//Main Divs
-#about {
-    margin: 8rem 0;
-}
-
-#project-board {
-    background-image: url('imgs/Backgrounds/ProjectBoardBack.svg');
-    background-size: cover;
-}
-
-#hack-nights {
-    background-color: #2B2B2B;
-    color: white;
-}
-
-#slack {
-    margin-top: 20%;
-    //Eventually make this javascript based, to make sure to clear the svg overhead. Or change structure
-}
-
-#contact {
-    background-image: url("imgs/Backgrounds/ContactBack.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 40%;
-    padding-bottom: 20%;
-    color: white;
-}
-
-#footer {
-    background-color: black;
-    height: 10vh;
-}
-
-//Items
-#hero-text-container {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    color: white;
-    padding-left: 8rem;
-    overflow: hidden;
-    #hero-img-container {
-        height: 100%;
-        padding: 0;
-        #hero-rotated-row {
-            transform: rotate(-20deg);
-            margin-top: -15vh;
-            .hero-img-col {
-                padding: 0 3vw 0 3vw;
-            }
-            .hero-img {
-                padding: calc(1rem + 1.5vw) 0 calc(1rem + 1.5vw) 0;
-                min-width: 40px;
-                transform: translate(1px);
-                transition: transform 5s linear;
-                width: 100%;
-            }
-        }
-    }
-}
-
-#project-board-items {
-    img {
-        height: 150vh;
-        margin: 60vh 0 0 -10vw;
-        max-width: 60vw;
-    }
-    h2,
-    p {
-        color: white;
-    }
-    #project-board-center-container {
-        margin-top: 10vh;
-    }
-    .center-env {
-        padding-top: 50vh;
-    }
-}
-
-#night-text-containter {
-    padding-left: 5rem;
-}
-
-.profile-row {
-    margin: 5% 0 5% 0%;
-}
-
-.profile-icon {
-    width: 80%;
-}
-
-.footer-col {
-    margin: auto 0 auto 0;
-    #footerLogo {
-        font-family: $primaryFont;
-    }
-    p {
-        color: white;
-        display: inline;
-    }
-}
-
 //Text
 h1,
 h2,
@@ -245,7 +358,7 @@ h6 {
 
 h1,
 h2 {
-    font-size: calc(0.7rem + 5vw);
+    font-size: calc(3rem + 3vw);
     letter-spacing: calc(0.05rem + 0.1vw);
 }
 
@@ -254,7 +367,11 @@ h3 {
     letter-spacing: 0.02rem;
 }
 
+h4 {
+	font-size: calc(1.3rem + 1vw);
+}
+
 p {
     font-family: $subFont;
-    font-size: calc(0.5rem + 0.6vw);
+    font-size: calc(0.5rem + 1vw);
 }
