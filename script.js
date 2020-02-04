@@ -144,18 +144,20 @@ $(function() {
     var clickCounter = 0;
     $("#slackCheck").click(function() {
         $("#slackEmailRow").toggle(200).css("display", "flex");
-        $("#invisible").animate({
-            "height": "80%",
-            "top": "10%"
-        }, 400);
-        clickCounter++;
-
-        if (clickCounter == 2) {
+        if ($(window).width() > 900) {
             $("#invisible").animate({
-                "height": "60%",
-                "top": "20%"
+                "height": "80%",
+                "top": "10%"
             }, 400);
-            clickCounter = 0;
+            clickCounter++;
+
+            if (clickCounter == 2) {
+                $("#invisible").animate({
+                    "height": "60%",
+                    "top": "20%"
+                }, 400);
+                clickCounter = 0;
+            }
         }
     });
     //Loading in mail form
