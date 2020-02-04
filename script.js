@@ -190,8 +190,7 @@ $(function() {
         if ($(window).width() < 1330) {
             $("#pComponents").css("opacity", "0.3");
             $("#project-text-container").css({
-                "text-align": "center",
-                "right": "25%"
+                "text-align": "center"
             });
         } else {
             $("#pComponents").css("opacity", "1");
@@ -201,6 +200,7 @@ $(function() {
             });
         }
 
+        //fixing hack nights
         if ($(window).width() < 768) {
             $("#night-text-containter").css({
                 "text-align": "center",
@@ -211,6 +211,13 @@ $(function() {
                 "text-align": "left",
                 "padding-left": "5rem"
             });
+        }
+
+        //fixing contact
+        if ($(window).width() < 845) {
+            $("#contact-text-container").css("text-align", "center");
+        } else {
+            $("#contact-text-container").css("text-align", "right");
         }
     })
 });
