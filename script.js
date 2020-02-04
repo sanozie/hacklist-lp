@@ -141,10 +141,24 @@ $(function() {
         $(".gradient-border").fadeOut(150);
         $(this).prev().fadeToggle(200)
     })
+    var clickCounter = 0;
     $("#slackCheck").click(function() {
-            $("#slackEmailRow").toggle(200).css("display", "flex");
-        })
-        //Loading in mail form
+        $("#slackEmailRow").toggle(200).css("display", "flex");
+        $("#invisible").animate({
+            "height": "80%",
+            "top": "10%"
+        }, 400);
+        clickCounter++;
+
+        if (clickCounter == 2) {
+            $("#invisible").animate({
+                "height": "60%",
+                "top": "20%"
+            }, 400);
+            clickCounter = 0;
+        }
+    });
+    //Loading in mail form
     $("button").click(function() {
         $("#blur").removeClass("inactive-blur").addClass("active-blur");
         $("#invisible").removeClass("inactive-mailing").addClass("active-mailing");
@@ -174,7 +188,7 @@ $(function() {
             });
 
             //Adding margin to slack
-            $("#slack").css("margin-top", "50%")
+            $("#slack").css("margin-top", "80%")
         } else {
             $("#hero-img-container").removeClass("position-absolute").addClass("col-6");
             $("#hero-text").removeClass("text-center").removeClass("hovered").removeClass("col-12");
@@ -187,7 +201,7 @@ $(function() {
         }
 
         //fixing project board 
-        if ($(window).width() < 1330) {
+        if ($(window).width() < 1200) {
             $("#pComponents").css("opacity", "0.3");
             $("#project-text-container").css({
                 "text-align": "center"
@@ -216,8 +230,79 @@ $(function() {
         //fixing contact
         if ($(window).width() < 845) {
             $("#contact-text-container").css("text-align", "center");
+            $(".profile-icon").css("width", "100%");
+            $(".prof-icon-row > .col-2").removeClass("col-2").addClass("col-3");
         } else {
             $("#contact-text-container").css("text-align", "right");
+            $(".profile-icon").css("width", "80%")
+            $(".prof-icon-row > .col-2").removeClass("col-3").addClass("col-2");
         }
-    })
+    });
+
+    //Media queries for initial load
+    if ($(window).width() > 1536) {
+        $("#hero-back-image").width($(window).width());
+    } else {
+        $("#hero-back-image").width(1536);
+    }
+
+    if ($(window).width() < 900) {
+        //Putting the hero-image-col as the background if display is small
+        $("#hero-img-container").removeClass("col-6").addClass("position-absolute");
+        $("#hero-text").addClass("text-center").addClass("hovered").addClass("col-12");
+        $("#hero-img-container").addClass("lowered").addClass("col-8").css({
+            "top": "30%",
+            "left": "30%"
+        });
+
+        //Adding margin to slack
+        $("#slack").css("margin-top", "80%")
+    } else {
+        $("#hero-img-container").removeClass("position-absolute").addClass("col-6");
+        $("#hero-text").removeClass("text-center").removeClass("hovered").removeClass("col-12");
+        $("#hero-img-container").removeClass("lowered").removeClass("col-8").addClass("col-4").css({
+            "top": "0",
+            "left": "0"
+        });
+
+        $("#slack").css("margin-top", "20%")
+    }
+
+    //fixing project board 
+    if ($(window).width() < 1200) {
+        $("#pComponents").css("opacity", "0.3");
+        $("#project-text-container").css({
+            "text-align": "center"
+        });
+    } else {
+        $("#pComponents").css("opacity", "1");
+        $("#project-text-container").css({
+            "text-align": "left",
+            "right": 0
+        });
+    }
+
+    //fixing hack nights
+    if ($(window).width() < 768) {
+        $("#night-text-containter").css({
+            "text-align": "center",
+            "padding": 0
+        });
+    } else {
+        $("#night-text-containter").css({
+            "text-align": "left",
+            "padding-left": "5rem"
+        });
+    }
+
+    //fixing contact
+    if ($(window).width() < 845) {
+        $("#contact-text-container").css("text-align", "center");
+        $(".profile-icon").css("width", "100%");
+        $(".prof-icon-row > .col-2").removeClass("col-2").addClass("col-3");
+    } else {
+        $("#contact-text-container").css("text-align", "right");
+        $(".profile-icon").css("width", "80%")
+        $(".prof-icon-row > .col-2").removeClass("col-3").addClass("col-2");
+    }
 });

@@ -104,6 +104,7 @@ body {
   -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
   will-change: opacity;
+  overflow-x: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -392,7 +393,7 @@ h3 {
 }
 
 h4 {
-  font-size: calc(1.3rem + 1vw);
+  font-size: calc(0.7rem + 1vw);
 }
 
 p {
