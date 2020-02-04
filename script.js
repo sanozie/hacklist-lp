@@ -189,6 +189,12 @@ $(function() {
 
             //Adding margin to slack
             $("#slack").css("margin-top", "80%")
+
+            //Making Mailing huge
+            $("#invisible").css({
+                "height": "100%",
+                "top": 0
+            })
         } else {
             $("#hero-img-container").removeClass("position-absolute").addClass("col-6");
             $("#hero-text").removeClass("text-center").removeClass("hovered").removeClass("col-12");
@@ -198,6 +204,11 @@ $(function() {
             });
 
             $("#slack").css("margin-top", "20%")
+
+            $("#invisible").css({
+                "height": "60%",
+                "top": "20%"
+            })
         }
 
         //fixing project board 
@@ -257,6 +268,12 @@ $(function() {
 
         //Adding margin to slack
         $("#slack").css("margin-top", "80%")
+
+        //Making Mailing huge
+        $("#invisible").css({
+            "height": "100%",
+            "top": 0
+        })
     } else {
         $("#hero-img-container").removeClass("position-absolute").addClass("col-6");
         $("#hero-text").removeClass("text-center").removeClass("hovered").removeClass("col-12");
@@ -266,6 +283,11 @@ $(function() {
         });
 
         $("#slack").css("margin-top", "20%")
+
+        $("#invisible").css({
+            "height": "60%",
+            "top": "20%"
+        })
     }
 
     //fixing project board 
