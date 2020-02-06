@@ -34,7 +34,7 @@
             <div id="hero-text-container" class="row position-absolute justify-content-center">
                 <div id="hero-text" class="col-4 center-container">
                     <div class="center-env">
-                        <h1>COMMUNITY PLATFORM FOR PRODUCT DEVELOPMENT</h1>
+                        <h1>COMMUNITY PLATFORM FOR PROJECT DEVELOPMENT</h1>
                         <p>Introducing DIYHacks, the online center for college students invested in building projects.</p>
                     </div>
                 </div>
@@ -221,37 +221,45 @@
         </div>
     </div>
     <div id="invisible" class="container-fluid d-flex align-items-center inactive-mailing justify-content-center">
-        <div class="row">
+        <div id="sent-form" class="row">
             <div class="col-12">
-                <h2>SIGN UP FOR <br/> OUR MAILING LIST</h2>
+                <div class="row justify-content-center m-3 p-3">
+                    <img src="imgs/Assets/Designs/resolution.png" />
+                </div>
+                <div class="row justify-content-center ">
+                    <h3>ALL SIGNED UP!</h3>
+                </div>
+                <div class="row justify-content-center ">
+                    <p>We'll contact you soon! Be on the lookout!</p>
+                </div>
+                <div class="row justify-content-center m-1">
+                    <button class="btn btn-tertiary order-md-2 closeMail" type="button">CLOSE</button>
+                </div>
             </div>
         </div>
-        <div id="formRow" class="row justify-content-center">
-            <div class="col-12">
+        <div id="active-form" class="row">
+            <div class="col-6 center-container">
+                <h2>SIGN UP FOR <br/> OUR MAILING LIST</h2>
+            </div>
+            <div id="mailFormDiv" class="col-6" style="">
                 <form id="mailForm">
+                    <p id="form-status"></p>
                     <div class="form-group form-inline row">
                         <label for="name" class="col-sm-2 col-form-label">Full Name</label>
                         <div class="col-sm-5 input-col position-relative">
                             <div class="gradient-border position-absolute"></div>
-                            <input name="firstName" type="text" class="form-control w-100" placeholder="First" required>
+                            <input name="firstName" type="text" class="form-control w-100 required" placeholder="First" required>
                         </div>
                         <div class="col-sm-5 input-col">
                             <div class="gradient-border position-absolute"></div>
-                            <input name="lastName" type="text" class="form-control w-100" placeholder="Last" required>
+                            <input name="lastName" type="text" class="form-control w-100 required" placeholder="Last" required>
                         </div>
                     </div>
                     <div class="form-group form-inline row">
                         <label for="email" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10 input-col">
                             <div class="gradient-border position-absolute"></div>
-                            <input type="text" name="email" class="form-control w-100" placeholder="codicoder@coolstuff.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group form-inline row">
-                        <label for="confEmail" class="col-sm-2 col-form-label">Confirm Email</label>
-                        <div class="col-sm-10 input-col">
-                            <div class="gradient-border position-absolute"></div>
-                            <input type="text" name="confEmail" class="form-control w-100" required>
+                            <input type="text" name="email" class="form-control w-100 required" placeholder="codicoder@coolstuff.com" required>
                         </div>
                     </div>
                     <div class="row justify-content-center align-items-center">
@@ -261,14 +269,66 @@
                         <label for="slackEmail" class="col-sm-2 col-form-label">Slack Email</label>
                         <div class="col-sm-10 input-col">
                             <div class="gradient-border position-absolute"></div>
-                            <input type="text" name="slackEmail" class="form-control w-100" required>
+                            <input id="slackInput" type="text" name="slackEmail" class="form-control w-100">
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <input type="submit" class="btn btn-primary order-md-1" value="SUBMIT" name="submit" />
-                        <button id="closeMail" class="btn btn-tertiary order-md-2" type="button">CLOSE</button><br/>
+                        <input id="formSubmit" type="button" class="btn btn-primary order-md-1" value="SUBMIT" name="submit" />
+                        <button class="btn btn-tertiary order-md-2 closeMail" type="button">CLOSE</button><br/>
                     </div>
                 </form>
+                <script>
+                    var $form = $('#mailForm'),
+                        url = 'https://script.google.com/macros/s/AKfycbw2AsAl0yXaWFcbDvIaTyHHSDPYOMgCMJjJAMGwR2dyyTs5ut17/exec',
+                        formNegateanimation = anime({
+                            targets: "#form-status",
+                            translateX: "10px",
+                            easing: 'spring(0.2, 80, 10, 100)',
+                            autoplay: false,
+                            loop: true
+                        })
+
+                    $('#formSubmit').on('click', function(e) {
+                        e.preventDefault();
+                        var values = [];
+                        var completedForm = true;
+                        $("input[type='text']").each(function() {
+                            values.push($(this).val());
+                            if ($(this).hasClass("required") && $(this).val() == "") {
+                                completedForm = false;
+                            }
+                        })
+                        if (completedForm) {
+                            var data = {
+                                "firstName": values[0],
+                                "lastName": values[1],
+                                "email": values[2],
+                                "slackEmail": values[3]
+                            }
+                            var jqxhr = $.ajax({
+                                url: url,
+                                method: "GET",
+                                dataType: "json",
+                                data: data
+                            }).success(
+                                sentForm()
+                            );
+                        } else {
+                            $("#form-status").text("Please make sure to fill the form elements before submitting.");
+                            formNegateanimation.play;
+                        }
+
+                    })
+
+                    function sentForm() {
+                        $("#active-form").toggle(200);
+                        $("#sent-form").toggle(200);
+                        $("#invisible").animate({
+                            "height": "100%",
+                            "top": "0%"
+                        }, 300);
+                    }
+                </script>
             </div>
         </div>
     </div>

@@ -283,7 +283,11 @@ body {
     }
 }
 
-//Forms 
+//Forms
+#sent-form {
+    display: none;
+}
+
 #formRow {
     padding-right: 1rem;
     font-size: calc(0.4rem + 1vw);
