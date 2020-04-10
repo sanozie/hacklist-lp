@@ -35,6 +35,14 @@ sans-serif;
     right: 0;
 }
 
+@mixin poster-relative {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 //Misc 
 body {
     overflow-x: hidden;
@@ -48,6 +56,10 @@ body {
     margin: 0;
 }
 
+.navbar {
+    backdrop-filter: blur(5px);
+}
+
 .center-container {
     @include center;
 }
@@ -58,6 +70,10 @@ body {
 
 .poster-fixed {
     @include poster-fixed;
+}
+
+.poster-relative {
+    @include poster-relative;
 }
 
 .center-container-nm {
