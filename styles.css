@@ -16,6 +16,7 @@ body {
 .navbar {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    white-space: nowrap;
 }
 
 .center-container {
@@ -105,6 +106,14 @@ body {
 }
 
 .btn-lighter:hover {
+    background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
+    color: #2b2b2b;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: #2b2b2b;
+}
+
+.btn-lighter-mobile {
     background: -webkit-linear-gradient(-30deg, #9D67E3, #6BB7CD);
     color: #2b2b2b;
     -webkit-background-clip: border-box;
