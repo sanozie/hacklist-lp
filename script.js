@@ -189,10 +189,6 @@ $(function() {
                 "top": "30%",
                 "left": "30%"
             });
-
-            //Adding margin to slack
-            $("#slack").css("margin-top", "80%")
-
             //Making Mailing huge
             $("#invisible").css({
                 "height": "100%",
@@ -206,7 +202,6 @@ $(function() {
                 "left": "0"
             });
 
-            $("#slack").css("margin-top", "20%")
 
             $("#invisible").css({
                 "height": "60%",
@@ -269,9 +264,6 @@ $(function() {
             "left": "30%"
         });
 
-        //Adding margin to slack
-        $("#slack").css("margin-top", "80%")
-
         //Making Mailing huge
         $("#invisible").css({
             "height": "100%",
@@ -284,8 +276,6 @@ $(function() {
             "top": "0",
             "left": "0"
         });
-
-        $("#slack").css("margin-top", "20%")
 
         $("#invisible").css({
             "height": "60%",

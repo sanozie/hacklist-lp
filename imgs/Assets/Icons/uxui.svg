@@ -1,21 +1,5 @@
-<svg id="UX_UI_Skill" data-name="UX/UI Skill" xmlns="http://www.w3.org/2000/svg" width="247" height="195" viewBox="0 0 247 195">
-  <g id="Rectangle_17" data-name="Rectangle 17" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="10">
-    <rect width="110" height="195" rx="42" stroke="none"/>
-    <rect x="5" y="5" width="100" height="185" rx="37" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="247.001" height="195" viewBox="0 0 247.001 195">
+  <g id="uxui" transform="translate(5 5)">
+    <path id="Union_2" data-name="Union 2" d="M-3151.687,212.657a37,37,0,0,1-37-37v-111a37,37,0,0,1,37-37h26a37,37,0,0,1,37,37v111a37,37,0,0,1-37,37Zm137-19a13,13,0,0,1-13-13q0-.651.063-1.286l-33.957-58.481h0l34.054-58.647a13.614,13.614,0,0,1-.16-2.085,13.5,13.5,0,0,1,13.5-13.5h49a13.5,13.5,0,0,1,13.5,13.5,13.5,13.5,0,0,1-13.5,13.5h-49a13.5,13.5,0,0,1-13.34-11.415l-34.054,58.647h0l33.957,58.481a13,13,0,0,1,12.938-11.713h50a13,13,0,0,1,13,13,13,13,0,0,1-13,13Zm1-59a14,14,0,0,1-14-14,14,14,0,0,1,14-14h48a14,14,0,0,1,14,14,14,14,0,0,1-14,14Z" transform="translate(3188.688 -27.657)" fill="#2b2b2b" stroke="#2b2b2b" stroke-linejoin="round" stroke-width="10"/>
   </g>
-  <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(161 19)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="10">
-    <rect width="86" height="37" rx="18.5" stroke="none"/>
-    <rect x="5" y="5" width="76" height="27" rx="13.5" fill="none"/>
-  </g>
-  <g id="Rectangle_19" data-name="Rectangle 19" transform="translate(161 79)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="10">
-    <rect width="86" height="38" rx="19" stroke="none"/>
-    <rect x="5" y="5" width="76" height="28" rx="14" fill="none"/>
-  </g>
-  <g id="Rectangle_20" data-name="Rectangle 20" transform="translate(161 140)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="10">
-    <rect width="86" height="36" rx="18" stroke="none"/>
-    <rect x="5" y="5" width="76" height="26" rx="13" fill="none"/>
-  </g>
-  <line id="Line_2" data-name="Line 2" x2="50.326" transform="translate(110.814 98.233)" fill="none" stroke="#fff" stroke-width="8"/>
-  <line id="Line_3" data-name="Line 3" x2="34.841" y2="60.004" transform="translate(132.106 98.233)" fill="none" stroke="#fff" stroke-width="8"/>
-  <line id="Line_4" data-name="Line 4" y1="60.004" x2="34.841" transform="translate(132.106 38.228)" fill="none" stroke="#fff" stroke-width="8"/>
 </svg>
