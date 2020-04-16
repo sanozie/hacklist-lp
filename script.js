@@ -243,6 +243,7 @@ $(function() {
             $(".prof-icon-row > .col-2").removeClass("col-2").addClass("col-3");
             $(".btn-lighter").removeClass("btn-lighter").addClass("btn-lighter-mobile");
             $("#navlogo").css("display", "none");
+            $(".navbar").children().css("padding", "5px 0 0 0");
         } else {
             $("#contact-text-container").css("text-align", "right");
             $(".profile-icon").css("width", "80%")
@@ -321,6 +322,7 @@ $(function() {
         $(".prof-icon-row > .col-2").removeClass("col-2").addClass("col-3");
         $(".btn-lighter").removeClass("btn-lighter").addClass("btn-lighter-mobile");
         $("#navlogo").css("display", "none");
+        $(".navbar").children().css("padding", "5px 0 0 0");
 
     } else {
         $("#contact-text-container").css("text-align", "right");
