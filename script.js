@@ -242,11 +242,15 @@ $(function() {
             $(".profile-icon").css("width", "100%");
             $(".prof-icon-row > .col-2").removeClass("col-2").addClass("col-3");
             $(".btn-lighter").removeClass("btn-lighter").addClass("btn-lighter-mobile");
+            $("#navlogo").css("display", "none");
+            $("#navsignup").css("margin-right", "auto");
         } else {
             $("#contact-text-container").css("text-align", "right");
             $(".profile-icon").css("width", "80%")
             $(".prof-icon-row > .col-2").removeClass("col-3").addClass("col-2");
             $(".btn-lighter-mobile").removeClass("btn-lighter-mobile").addClass("btn-lighter");
+            $("#navlogo").css("display", "flex");
+            $("#navsignup").css("margin-right", "0");
         }
     });
 
@@ -312,16 +316,21 @@ $(function() {
         });
     }
 
-    //fixing contact
+    //fixing contact and mobile capabilities
     if ($(window).width() < 845) {
         $("#contact-text-container").css("text-align", "center");
         $(".profile-icon").css("width", "100%");
         $(".prof-icon-row > .col-2").removeClass("col-2").addClass("col-3");
         $(".btn-lighter").removeClass("btn-lighter").addClass("btn-lighter-mobile");
+        $("#navlogo").css("display", "none");
+        $("#navsignup").css("margin-right", "auto");
+
     } else {
         $("#contact-text-container").css("text-align", "right");
         $(".profile-icon").css("width", "80%")
         $(".prof-icon-row > .col-2").removeClass("col-3").addClass("col-2");
         $(".btn-lighter-mobile").removeClass("btn-lighter-mobile").addClass("btn-lighter");
+        $("#navlogo").css("display", "flex");
+        $("#navsignup").css("margin-right", "0");
     }
 });
