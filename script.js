@@ -142,25 +142,6 @@ $(function() {
         $(".gradient-border").fadeOut(150);
         $(this).prev().fadeToggle(200)
     })
-    var clickCounter = 0;
-    $("#slackCheck").click(function() {
-        $("#slackEmailRow").toggle(200).css("display", "flex");
-        if ($(window).width() > 900) {
-            $("#invisible").animate({
-                "height": "80%",
-                "top": "10%"
-            }, 300);
-            clickCounter++;
-
-            if (clickCounter == 2) {
-                $("#invisible").animate({
-                    "height": "60%",
-                    "top": "20%"
-                }, 300);
-                clickCounter = 0;
-            }
-        }
-    });
     //Loading in mail form
     $("button").click(function() {
         $("#blur").removeClass("inactive-blur").addClass("active-blur");
@@ -204,8 +185,8 @@ $(function() {
 
 
             $("#invisible").css({
-                "height": "60%",
-                "top": "20%"
+                "height": "80%",
+                "top": "10%"
             })
         }
 
@@ -283,8 +264,8 @@ $(function() {
         });
 
         $("#invisible").css({
-            "height": "60%",
-            "top": "20%"
+            "height": "80%",
+            "top": "10%"
         })
     }
 
