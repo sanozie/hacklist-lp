@@ -24,7 +24,7 @@ $(function() {
     var imgCol = 1;
     herodata.forEach(col => {
         col.forEach(img => {
-            var element = `<img class = 'img-fluid hero-img' src = '${img}'/>`;
+            var element = `<img class = 'img-fluid hero-img' src = '${img}' alt='Skill icon'/>`;
             $(".hero-img-col").eq(imgCol - 1).append(element);
         });
         imgCol++;

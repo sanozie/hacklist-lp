@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <title>University Platform for Project Developemt | DIYHacks</title>
@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
 
     <!--Anime.js-->
-    <script src="anime.min.js"></script>
+    <script src="anime.min.js" async></script>
 
     <!--Styles-->
     <link rel="stylesheet" href="styles.css">
 
     <!--JS-->
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155374728-1"></script>
@@ -68,14 +68,18 @@
     <!-- End Google Tag Manager (noscript) -->
     <nav class="navbar fixed-top px-5 position-relative " style="mix-blend-mode: luminosity">
         <h5 id="navlogo" class="mr-auto" style="color: rgb(87, 87, 87)">DIYHACKS</h5>
-        <button id="navsignup" class="btn" style="color: rgb(87, 87, 87)">SIGN UP</button>
+        <button id="navsignup" class="btn mr-md-3" style="color: rgb(87, 87, 87)">SIGN UP</button>
         <a class="btn" style="color: rgb(87, 87, 87)" href="https://forms.zohopublic.com/sanoziec/form/DIYHacks/formperma/geaTps0LHfoBCxxUJfRBiyv33ljCxUXYVPPqJuLhkeM">TAKE SURVEY</a>
     </nav>
     <div id="blur" class="inactive-blur">
 
         <div id="hero-back" class="container-fluid position-relative">
             <div id="hero-back-container position-absolute">
-                <img id="hero-back-image" src="imgs/Backgrounds/HeroSectionBack.svg" />
+                <picture>
+                    <source srcset="imgs/Backgrounds/HeroSectionBack.webp" type="image/webp">
+                    <source srcset="imgs/Backgrounds/HeroSectionBack.svg" type="image/svg">
+                    <img id="hero-back-image" src="imgs/Backgrounds/HeroSectionBack.svg" alt="Alt Text!">
+                </picture>
             </div>
         </div>
         <div id="hero" class="container-fluid position-absolute">
@@ -98,7 +102,11 @@
         <div id="about" class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-3">
-                    <img class="img-fluid" src="imgs/Assets/Designs/Lightbulb.png" data-scroll-speed="10" />
+                    <picture>
+                        <source srcset="imgs/Assets/Designs/Lightbulb.webp" type="image/webp">
+                        <source srcset="imgs/Assets/Designs/Lightbulb.png" type="image/png">
+                        <img src="imgs/Assets/Designs/Lightbulb.png" alt="Alt Text!">
+                    </picture>
                 </div>
                 <div class="col-6">
                     <div class="row justify-content-center text-center">
@@ -109,19 +117,27 @@
                     <div id="whatWeDo" class="row justify-content-center">
                         <div class="col-4 text-center p-0">
                             <h4 class="w-100">WHAT WE DO</h4>
-                            <img class="img-fluid" src="imgs/Assets/Designs/Arrow.svg" />
+                            <img class="img-fluid" src="imgs/Assets/Designs/Arrow.svg" alt="down arrow" />
                         </div>
                     </div>
                 </div>
                 <div class="col-3 center-container">
-                    <img class="img-fluid" src="imgs/Assets/Designs/Gears.png" data-scroll-speed="6">
+                    <picture>
+                        <source srcset="imgs/Assets/Designs/Gears.webp" type="image/webp">
+                        <source srcset="imgs/Assets/Designs/Gears.png" type="image/png">
+                        <img src="imgs/Assets/Designs/Gears.png" alt="Gear Design">
+                    </picture>
                 </div>
             </div>
         </div>
         <div id="project-board" class="container-fluid position-relative">
             <div id="project-board-items" class="row">
                 <div class="col-6">
-                    <img id="pComponents" src="imgs/Assets/Designs/Project%20Board%20Components.png" />
+                    <picture>
+                        <source srcset="imgs/Assets/Designs/Project%20Board%20Components.webp" type="image/webp">
+                        <source srcset="imgs/Assets/Designs/Project%20Board%20Components.png" type="image/png">
+                        <img id="pComponents" src="imgs/Assets/Designs/Project%20Board%20Components.png" alt="Project Board Components">
+                    </picture>
                 </div>
                 <div id="project-text-container" class="col-xl-6 ml-auto center-container position-absolute" data-scroll-speed="8">
                     <div class="center-env">
@@ -151,14 +167,16 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-fluid" src="imgs/Assets/Designs/Moon.png" />
+                    <picture>
+                        <source srcset="imgs/Assets/Designs/Moon.webp" type="image/webp">
+                        <source srcset="imgs/Assets/Designs/Moon.png" type="image/png">
+                        <img id="moon" src="imgs/Assets/Designs/Moon.png" alt="Hack nights design">
+                    </picture>
                 </div>
             </div>
         </div>
         <div class="container-fluid">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="272.682" viewBox="0 0 1920 272.682" style="width: 100%; height: 100%;">
-                <path id="slacktop" d="M1920,0V272.682H0S753.514,224.32,1233.514,156.149,1920,0,1920,0Z" fill="#222"/>
-              </svg>
+            <img src="imgs/Backgrounds/slacktop.webp" class="w-100" alt="Slack top wave">
         </div>
         <div id="slack" class="container-fluid position-relative">
             <div class="row justify-content-center">
@@ -171,7 +189,11 @@
             </div>
             <div id="slack-svg-div" class="row justify-content-center">
                 <div class="col-9 text-center">
-                    <svg data-scroll-speed="10" class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="1142.298" height="642.185" viewBox="0 0 1142.298 642.185"><g transform="translate(-394.124 -6527.26)"><path d="M234.074,62.756c168.731-65,259.672-55.444,345.28,0,110.311,71.443,35.2,132.138,35.2,206.8,0,132.854,48.986,325.62-108.222,325.62S150.264,396.364,46.979,285.515,65.344,127.757,234.074,62.756Z" transform="translate(385.228 6574.267)" fill="#ecb22e"/><path d="M240.143,127.015c136.118-36.742,215.614-14.773,301.222,45.53,44.516,31.358,40.856,161.232,40.856,161.232s3.186,150.89-21.935,178.536c-53.564,58.947-381.611-29.234-484.9-149.8S104.024,163.757,240.143,127.015Z" transform="translate(767.228 6418.267)" fill="#36c5f0"/><path d="M234.074,56.648C402.8.424,493.745,8.69,579.354,56.648c110.311,61.8,69.436,81.742,69.436,146.325,0,114.915-65.475,267.018-222.683,267.018s-117.594,22.92-220.878-72.96S65.344,112.872,234.074,56.648Z" transform="translate(880.228 6635.267)" fill="#e01e5a"/><g transform="translate(-716 -130)"><path d="M3136.408,692.661C2988.484,602.83,2863,610.3,2863,484.573S2963.284,47.74,3136.408,150.457s260.464,259.826,249.935,390.4c-7.872,97.622-61.01,184.333-149.134,184.345C3207.46,725.208,3173.741,715.332,3136.408,692.661Z" transform="translate(-1463.467 6527.261)" fill="#2eb67d"/><g transform="translate(1524.671 6818.204)"><g transform="translate(0.218 144.288)"><path d="M120.341,157.57a28.77,28.77,0,1,1-28.77-28.77h28.77Z" transform="translate(-62.8 -128.8)" fill="#fff"/><path d="M95.8,157.57a28.77,28.77,0,0,1,57.541,0V229.5a28.77,28.77,0,1,1-57.541,0Z" transform="translate(-23.874 -128.8)" fill="#fff"/></g><path d="M124.571,120.141a28.77,28.77,0,1,1,28.77-28.77v28.77Z" transform="translate(-23.656 -62.6)" fill="#fff"/><path d="M163.615,95.7a28.77,28.77,0,0,1,0,57.541H91.47a28.77,28.77,0,1,1,0-57.541Z" transform="translate(-62.7 -23.556)" fill="#fff"/><g transform="translate(144.288)"><path d="M161.9,124.47a28.77,28.77,0,1,1,28.77,28.77H161.9Z" transform="translate(-89.974 -23.556)" fill="#fff"/><path d="M186.441,163.515a28.77,28.77,0,1,1-57.541,0V91.371a28.77,28.77,0,1,1,57.541,0Z" transform="translate(-128.9 -62.6)" fill="#fff"/></g><g transform="translate(144.288 144.288)"><path d="M157.67,161.8a28.77,28.77,0,1,1-28.77,28.77V161.8Z" transform="translate(-128.9 -89.874)" fill="#fff"/><path d="M157.67,186.341a28.77,28.77,0,1,1,0-57.541h72.144a28.77,28.77,0,0,1,0,57.541Z" transform="translate(-128.9 -128.8)" fill="#fff"/></g></g></g></g></svg>
+                    <picture>
+                        <source srcset="imgs/Assets/Designs/SlackDesign.webp" type="image/webp">
+                        <source srcset="imgs/Assets/Designs/SlackDesign.svg" type="image/svg">
+                        <img src="imgs/Assets/Designs/SlackDesign.svg" alt="Slack Design">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -186,7 +208,11 @@
                 <div class="col-md-6">
                     <div class="profile-row row">
                         <div class="col-4">
-                            <img class="img-fluid" src="imgs/Assets/Designs/SamProf.png" />
+                            <picture>
+                                <source srcset="imgs/Assets/Designs/SamProf.webp" type="image/webp">
+                                <source srcset="imgs/Assets/Designs/SamProf.png" type="image/png">
+                                <img class="img-fluid" src="imgs/Assets/Designs/SamProf.png" alt="Profile picture">
+                            </picture>
                         </div>
                         <div class="col-8 my-auto">
                             <div class="center-env">
@@ -195,22 +221,22 @@
                                 <div class="row prof-icon-row">
                                     <div class="col-2 center-container-nm">
                                         <a href="http://linkedin.com/in/samanozie">
-                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/linkedin.svg" />
+                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/linkedin.svg" alt="LinkedIn link" />
                                         </a>
                                     </div>
                                     <div class="col-2 center-container-nm">
                                         <a href="http://github.com/sanozie">
-                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" />
+                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" alt="github link" />
                                         </a>
                                     </div>
                                     <div class="col-2 center-container-nm">
                                         <a href="mailto:sanoziec@gmail.com">
-                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" />
+                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" alt="Mail icon" />
                                         </a>
                                     </div>
                                     <div class="col-2 center-container-nm">
                                         <a href="http://sanozie.github.io">
-                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/earth-globe.svg" />
+                                            <img class="img-fluid profile-icon" src="imgs/Assets/Icons/earth-globe.svg" alt="Website Icon" />
                                         </a>
                                     </div>
                                 </div>
@@ -258,7 +284,7 @@
                 <form action="https://gmail.us4.list-manage.com/subscribe/post-json?u=10220f4953ebea0edf51592fb&amp;id=e01dbaccaa&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <p id="form-status"></p>
                     <div class="form-group form-inline row">
-                        <label for="name" class="col-sm-2 col-form-label">Full Name</label>
+                        <label for="mce-FNAME" class="col-sm-2 col-form-label">Full Name</label>
                         <div class="col-sm-5 input-col position-relative">
                             <div class="gradient-border position-absolute"></div>
                             <input name="FNAME" id="mce-FNAME" type="text" class="form-control w-100 required" placeholder="First" required>
@@ -269,24 +295,12 @@
                         </div>
                     </div>
                     <div class="form-group form-inline row">
-                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <label for="mce-EMAIL" class="col-sm-2 col-form-label">Email</label>
                         <div class="col-sm-10 input-col">
                             <div class="gradient-border position-absolute"></div>
                             <input id="mce-EMAIL" type="email" name="EMAIL" class="form-control w-100 required" placeholder="codicoder@coolstuff.com" required>
                         </div>
                     </div>
-                    <!--Part of old form
-                    <div class="row justify-content-center align-items-center">
-                        <p>Would you like to join our <br/>Slack Community?</p> <input id="slackCheck" type="checkbox" />
-                    </div>
-                    <div id="slackEmailRow" class="form-group form-inline row">
-                        <label for="slackEmail" class="col-sm-2 col-form-label">Slack Email</label>
-                        <div class="col-sm-10 input-col">
-                            <div class="gradient-border position-absolute"></div>
-                            <input id="slackInput" type="text" name="slackEmail" class="form-control w-100">
-                        </div>
-                    </div>
-                    -->
                     <div class="row justify-content-center">
                         <input id="mc-embedded-subscribe" name="subscribe" type="submit" class="btn btn-lighter order-md-1" value="SUBMIT" name="submit" />
                         <button class="btn btn-tertiary order-md-2 closeMail" type="button">CLOSE</button><br/>
