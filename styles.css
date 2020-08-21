@@ -282,7 +282,6 @@ body {
 }
 
 #contact {
-    background-image: url("imgs/Backgrounds/ContactBack.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #222222;
@@ -481,6 +480,12 @@ p {
 @media only screen and (max-width: 600px) {
     #contact {
         background-image: url("imgs/Backgrounds/ContactBackMobile.svg");
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #contact {
+        background-image: url("imgs/Backgrounds/ContactBack.svg");
     }
 }
 /*# sourceMappingURL=styles.css.map */
