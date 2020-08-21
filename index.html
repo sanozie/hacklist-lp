@@ -368,8 +368,8 @@
         </div>
     </div>
     <script>
+    //Showing and closing form on click
     document.querySelectorAll('.signup').forEach(item => {
-        console.log('hello')
         item.addEventListener('click', () => {
             document.querySelector('#blur').classList.remove('inactive-blur')
             document.querySelector('#blur').classList.add('active-blur')
@@ -386,6 +386,12 @@
             document.querySelector("#invisible").classList.add("inactive-mailing");
         })
     })
+
+    //Media queries
+    if(window.innerWidth < 600) {
+        alert('worked')
+        
+    }
     </script>
 </body>
 
