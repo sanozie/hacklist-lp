@@ -10,18 +10,12 @@
 
     <!-- Bootstrap Links -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
-
-    <!--Anime.js-->
-    <script src="anime.min.js" async></script>
-
+    
     <!--Styles-->
     <link rel="stylesheet" href="styles.css">
 
     <!--JS-->
-    <script src="script.js" async></script>
+    <script src="script.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155374728-1"></script>
@@ -66,90 +60,69 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDV6V53"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <nav class="navbar fixed-top px-5 position-relative " style="mix-blend-mode: luminosity">
-        <h5 id="navlogo" class="mr-auto" style="color: rgb(87, 87, 87)">DIYHACKS</h5>
-        <button id="navsignup" class="btn mr-md-3" style="color: rgb(87, 87, 87)">SIGN UP</button>
+    <nav class="navbar fixed-top px-md-5 position-relative " style="mix-blend-mode: luminosity">
+        <h5 id="navlogo" class="d-none d-md-flex mr-md-auto" style="color: rgb(87, 87, 87)">DIYHACKS</h5>
+        <button id="navsignup" class="btn mr-md-3 signup" style="color: rgb(87, 87, 87)">SIGN UP</button>
         <a class="btn" style="color: rgb(87, 87, 87)" href="https://forms.zohopublic.com/sanoziec/form/DIYHacks/formperma/geaTps0LHfoBCxxUJfRBiyv33ljCxUXYVPPqJuLhkeM">TAKE SURVEY</a>
     </nav>
     <div id="blur" class="inactive-blur">
 
         <div id="hero-back" class="container-fluid position-relative">
             <div id="hero-back-container position-absolute">
-                <picture>
-                    <source srcset="imgs/Backgrounds/HeroSectionBack.webp" type="image/webp">
-                    <source srcset="imgs/Backgrounds/HeroSectionBack.svg" type="image/svg">
-                    <img id="hero-back-image" src="imgs/Backgrounds/HeroSectionBack.svg" alt="Alt Text!">
-                </picture>
+                <img id="hero-back-image" src="imgs/Backgrounds/Landing.svg" alt="Alt Text!">
             </div>
-        </div>
-        <div id="hero" class="container-fluid position-absolute">
-            <div id="hero-text-container" class="row position-absolute justify-content-center">
-                <div id="hero-text" class="col-4 center-container">
-                    <div class="center-env">
-                        <h1>COMMUNITY PLATFORM FOR PROJECT DEVELOPMENT</h1>
-                        <p>Introducing DIYHacks, the online center for college students invested in building projects and startup ideas.</p>
+            <div id="hero" class="container-fluid position-absolute center-container-nm">
+                <div id="hero-text-container" class="row">
+                    <div class="col-md-3 d-none d-md-flex center-container">
+                        <div class="center-env hero-banner hero-banner-left">
+                            <img src="imgs/Assets/Designs/activehacks.png" alt="Active Hacks" class="img-fluid" />
+                        </div>
                     </div>
-                </div>
-                <div id="hero-img-container" class="col-6 position-relative">
-                    <div id="hero-rotated-row" class="row poster">
-                        <div id="hero-img-col-1" class="hero-img-col col-4 position-relative"></div>
-                        <div id="hero-img-col-2" class="hero-img-col col-4 position-relative"></div>
-                        <div id="hero-img-col-3" class="hero-img-col col-4 position-relative"></div>
+                    <div class="col-md-6 center-container px-5">
+                        <div class="center-env text-center">
+                            <h1 class='banner-text'>BOLSTER YOUR RESUME<br/>IN 36 HOURS</h1>
+                            <p class='banner-text'>Gain skills in the process. Finish up with a prototype you’ll be proud of. 
+                                And of course, it’s free.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="about" class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-3">
-                    <picture>
-                        <source srcset="imgs/Assets/Designs/Lightbulb.webp" type="image/webp">
-                        <source srcset="imgs/Assets/Designs/Lightbulb.png" type="image/png">
-                        <img src="imgs/Assets/Designs/Lightbulb.png" alt="Alt Text!">
-                    </picture>
-                </div>
-                <div class="col-6">
-                    <div class="row justify-content-center text-center">
-                        <h2 class="colored-text">DECENTRALIZING<br/> THE<br/> HACKATHON</h2>
-                        <p>Surround yourself with those that build the future. <br/>Team up with motivated <span class="colored-text enphasis">developers, designers, and product managers </span>to make your ideas a <span class="colored-text enphasis">reality.</span></p>
-                        <button class="btn btn-lighter">GET STARTED</button>
-                    </div>
-                    <div id="whatWeDo" class="row justify-content-center">
-                        <div class="col-4 text-center p-0">
-                            <h4 class="w-100">WHAT WE DO</h4>
-                            <img class="img-fluid" src="imgs/Assets/Designs/Arrow.svg" alt="down arrow" />
+                    <div class="col-md-3 d-none d-md-flex center-container">
+                        <div class="center-env hero-banner hero-banner-right">
+                            <img src="imgs/Assets/Designs/submissions.png" alt="Active Hacks" class="img-fluid" />
                         </div>
                     </div>
                 </div>
-                <div class="col-3 center-container">
-                    <picture>
-                        <source srcset="imgs/Assets/Designs/Gears.webp" type="image/webp">
-                        <source srcset="imgs/Assets/Designs/Gears.png" type="image/png">
-                        <img src="imgs/Assets/Designs/Gears.png" alt="Gear Design">
-                    </picture>
+            </div>
+        </div>
+        
+        <div id="about" class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h1>WE PUT <img class='about-img' src='/imgs/Assets/Designs/skills.png' /> AND <img class='about-img' src='/imgs/Assets/Designs/ideas.png' /> TOGETHER</h1>
+                    <p class='lead'>To host our never-ending hackathon.</p>
+                    <button class="btn btn-lighter signup">GET STARTED</button>
                 </div>
             </div>
         </div>
         <div id="project-board" class="container-fluid position-relative">
             <div id="project-board-items" class="row">
-                <div class="col-6">
+                <div id="pComponents" class="col-6">
                     <picture>
                         <source srcset="imgs/Assets/Designs/Project%20Board%20Components.webp" type="image/webp">
                         <source srcset="imgs/Assets/Designs/Project%20Board%20Components.png" type="image/png">
-                        <img id="pComponents" src="imgs/Assets/Designs/Project%20Board%20Components.png" alt="Project Board Components">
+                        <img  src="imgs/Assets/Designs/Project%20Board%20Components.png" alt="Project Board Components">
                     </picture>
                 </div>
-                <div id="project-text-container" class="col-xl-6 ml-auto center-container position-absolute" data-scroll-speed="8">
-                    <div class="center-env">
-                        <h2>DIYHACKS<br/> PROJECT BOARD</h2>
-                        <p>With our campus-specific Project Board, you can find interesting projects and <span class="enphasis text-light">reach out to people who are as excited as you are about each idea.</span>
-                            <span class="bold">Launching Beta Fall 2020.</span></p>
-                        <button class="btn btn-darker">LEARN MORE</button>
+                <div id="project-text-container" class="col-xl-6 ml-auto center-container position-absolute" >
+                    <div class="center-env text-right text-center text-lg-right pr-lg-5 px-5 px-lg-0 mx-5 mx-lg-0">
+                        <h1 class='banner-text'>YOUR IDEAS, BUT <br/>&#10024; REAL &#10024;</h1>
+                        <p><span class='enphasis'>No experience? No problem.</span> Skill is no longer a barrier. Work with eager students to prototype your dream product <span class='enphasis'>without sacrificing ownership of your idea.</span>
+                            <br/><span class="enphasis">Launching Beta Fall 2020.</span></p>
+                        <button class="btn btn-darker signup">LEARN MORE</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="hack-nights" class="container-fluid position-relative">
+        <div class="container-fluid position-relative">
             <div id="topWaves" class="container-fluid position-absolute">
                 <svg class="top-wave lowerWave" xmlns="http://www.w3.org/2000/svg" width="1919.848" height="248.217" viewBox="0 0 1919.848 248.217">
 						<path d="M-263.066-79.877S-53.79-10.068,234.556,30.994,1656.782,168.335,1656.782,168.335l-1919.848,0Z" transform="translate(263.066 79.877)" fill="#222"/>
@@ -158,20 +131,18 @@
 						<path d="M-37.046,917.324h0l-1924.069,0c.433-.006,55.3-.736,141.953-3.138,51.1-1.416,103.313-3.131,155.185-5.1,64.809-2.456,129.252-5.313,191.539-8.492,158.516-8.09,304.127-18.284,432.789-30.3,76.387-7.134,147.571-15,211.574-23.374,34.4-4.5,67.4-9.24,98.09-14.085,32.085-5.065,62.529-10.386,90.486-15.815,104.7-20.33,201.524-40.184,287.781-59.011,69.005-15.061,131.443-29.5,185.577-42.923,48.158-11.939,80.7-20.843,99.51-26.211,20.271-5.783,29.5-8.846,29.584-8.875V917.323Z" transform="translate(1961.114 -680)" fill="#2b2b2b"/>
 					</svg>
             </div>
-            <div id="night-text-containter" class="row">
+            <div class="row my-5">
                 <div class="col-md-6 center-container">
-                    <div class="center-env">
-                        <h2><sup>DIY</sup>HackNights</h2>
-                        <p>Casual meet-ups of the DIYHacks community to socialize and/or work on projects. <span class="enphasis text-light">Chill at various venues around campus,</span> and make sure to bring some food (granted things get back to normal).</p><br/>
-                        <button class="btn btn-orange">SIGN UP</button>
+                    <div class="center-env pl-5 text-center text-md-left">
+                        <h1>FIND WHAT YOU’LL LOVE TO WORK ON.</h1>
+                        <p class="text-light">Is your friend’s shower-epiphany idea not cutting it? No worries. Find the project you’ll be passionate about with our filtering features.
+                            <span class="enphasis">Launching Beta Fall 2020.</span><br/>
+                            <br/>
+                        <button class="btn btn-lighter signup">SIGN UP</button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <picture>
-                        <source srcset="imgs/Assets/Designs/Moon.webp" type="image/webp">
-                        <source srcset="imgs/Assets/Designs/Moon.png" type="image/png">
-                        <img id="moon" src="imgs/Assets/Designs/Moon.png" alt="Hack nights design">
-                    </picture>
+                <div class="col-md-6 text-center">
+                    <img id="filters-img" src="imgs/Assets/Designs/filters@2x.png" alt="Hack nights design" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -181,10 +152,10 @@
         <div id="slack" class="container-fluid position-relative">
             <div class="row justify-content-center">
                 <div class="col-md-5 text-center">
-                    <h2>DIYHACKS <br/>SLACK CHANNEL</h2>
-                    <p>Network in <span class="enphasis text-light">#introductions</span>, discuss <span class="enphasis text-light">#project-ideas</span>, and share <span class="enphasis text-light">#resources</span> online, enabling you to be part of a
-                        community without leaving the confines of your room.</p>
-                    <button class="btn btn-green">SIGN UP</button>
+                    <h1>JOIN THE <br/> ONLINE COMMUNITY </h1>
+                    <p class="text-light">We’ve got a Slack! <span class="enphasis">Us: 1, Covid: 0.</span>
+                        Have fun with fellow creators, entrepreneurs, and future billionaires.</p>
+                    <button class="btn btn-lighter signup">SIGN UP</button>
                 </div>
             </div>
             <div id="slack-svg-div" class="row justify-content-center">
@@ -200,9 +171,9 @@
         <div id="contact" class="container-fluid position-relative">
             <div class="row justify-content-center">
                 <div id="contact-text-container" class="col-md-4 center-container-nm">
-                    <div class="center-env">
-                        <h2>CONNECT<br/>WITH<br/>US</h2>
-                        <p>Reach out to us for any reason!<br/> We'd love to get to know you.</p>
+                    <div class="center-en text-center text-md-right">
+                        <h2 class="banner-text">CONNECT<br/>WITH<br/>US</h2>
+                        <p class="banner-text">Reach out to us for any reason!<br/> We'd love to get to know you.</p>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -216,8 +187,8 @@
                         </div>
                         <div class="col-8 my-auto">
                             <div class="center-env">
-                                <h3>Samuel Anozie</h3>
-                                <p>UI Design | Full-Stack Development | Project Management</p>
+                                <h3 class="text-dark">Samuel Anozie</h3>
+                                <p class="text-dark">UI Design | Full-Stack Development | Project Management</p>
                                 <div class="row prof-icon-row">
                                     <div class="col-2 center-container-nm">
                                         <a href="http://linkedin.com/in/samanozie">
@@ -278,7 +249,7 @@
         </div>
         <div id="active-form" class="row">
             <div class="col-6 center-container">
-                <h2>SIGN UP FOR <br/> OUR MAILING LIST <br/>& SLACK COMMUNITY</h2>
+                <h2>JOIN THE COMMUNITY <br/> ( our slack! )</h2>
             </div>
             <div id="mailFormDiv" class="col-6 d-flex align-items-center">
                 <form action="https://gmail.us4.list-manage.com/subscribe/post-json?u=10220f4953ebea0edf51592fb&amp;id=e01dbaccaa&c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -396,6 +367,26 @@
             </div>
         </div>
     </div>
+    <script>
+    document.querySelectorAll('.signup').forEach(item => {
+        console.log('hello')
+        item.addEventListener('click', () => {
+            document.querySelector('#blur').classList.remove('inactive-blur')
+            document.querySelector('#blur').classList.add('active-blur')
+            document.querySelector("#invisible").classList.remove("inactive-mailing")
+            document.querySelector("#invisible").classList.add("active-mailing")
+        })
+    })
+
+    document.querySelectorAll('.closeMail').forEach(item => {
+        item.addEventListener('click', () => {
+            document.querySelector('#blur').classList.remove('active-blur')
+            document.querySelector('#blur').classList.add('inactive-blur')
+            document.querySelector("#invisible").classList.remove("active-mailing")
+            document.querySelector("#invisible").classList.add("inactive-mailing");
+        })
+    })
+    </script>
 </body>
 
 </html>

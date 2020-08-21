@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap');
 body {
     overflow-x: hidden;
     background-color: #2B2B2B;
@@ -74,7 +74,7 @@ body {
 }
 
 .enphasis {
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 .btn {
@@ -178,8 +178,8 @@ body {
 }
 
 .active-blur {
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
 }
 
 .active-mailing {
@@ -237,9 +237,28 @@ body {
 #hero-back img {
     width: 1536px;
 }
-
+.hero-banner-right:before {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.hero-banner-left:before {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.hero-banner:before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid white;
+    background-color: #2B2B2B;
+    mix-blend-mode: color-dodge;
+}
 #hero {
     top: 0;
+    height: 90vh;
 }
 
 #about {
@@ -255,31 +274,14 @@ body {
 }
 
 #project-board {
-    background-image: url("imgs/Backgrounds/ProjectBoardBack.svg");
+    background-image: url("imgs/Backgrounds/projectboard.svg");
     background-size: cover;
 }
 
-#hack-nights {
-    background-color: #2B2B2B;
-}
-
-#hack-nights h2,
-#hack-nights p {
-    color: #FFD100;
-}
-
-#moon {
-    max-width: 80vw;
-}
 
 #slack {
     background-color: #222222;
     padding-top: 10%;
-}
-
-#slack h2,
-#slack p {
-    color: #2EB67D;
 }
 
 #contact {
@@ -297,41 +299,6 @@ body {
     height: 10vh;
 }
 
-#hero-text-container {
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    color: white;
-    overflow: hidden;
-}
-
-#hero-text-container #hero-img-container {
-    height: 100%;
-    padding: 0;
-}
-
-#hero-text-container #hero-img-container #hero-rotated-row {
-    -webkit-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    margin-top: -15vh;
-}
-
-#hero-text-container #hero-img-container #hero-rotated-row .hero-img-col {
-    padding: 0 3vw 0 3vw;
-}
-
-#hero-text-container #hero-img-container #hero-rotated-row .hero-img {
-    padding: calc(1rem + 1.5vw) 0 calc(1rem + 1.5vw) 0;
-    min-width: 40px;
-    -webkit-transform: translate(1px);
-    transform: translate(1px);
-    -webkit-transition: -webkit-transform 5s linear;
-    transition: -webkit-transform 5s linear;
-    transition: transform 5s linear;
-    transition: transform 5s linear, -webkit-transform 5s linear;
-    width: 100%;
-}
-
 #project-board-items img {
     height: 150vh;
     margin: 60vh 0 0 -10vw;
@@ -345,10 +312,6 @@ body {
 
 #project-board-items .center-env {
     padding-top: 50vh;
-}
-
-#night-text-containter {
-    padding-left: 5rem;
 }
 
 #whatWeDo {
@@ -453,6 +416,10 @@ body {
     z-index: 1;
 }
 
+#filters-img {
+    max-height: 80vh;
+}
+
 #slack-svg-div {
     margin-top: 10%;
 }
@@ -468,14 +435,21 @@ h4,
 h5,
 h6 {
     font-family: "Anton", sans-serif;
-    color: #2B2B2B;
+    color: white;
 }
 
 h1 {
-    font-size: calc(3rem + 3vw);
+    font-size: calc(2rem + 2.5vw);
     letter-spacing: calc(0.05rem + 0.1vw);
 }
 
+.banner-text {
+    mix-blend-mode: color-dodge;
+    color: #6A6A6A;
+}
+.about-img {
+    height: calc(5rem + 20vw)
+}
 h2 {
     font-size: calc(1rem + 4.5vw);
     letter-spacing: calc(0.05rem + 0.1vw);
@@ -492,9 +466,18 @@ h4 {
 
 p {
     font-family: "Raleway", sans-serif;
+    font-weight: 300;
     font-size: calc(0.5rem + 1vw);
     color: #2B2B2B;
 }
 
+.lead {
+    font-size: calc(1rem + 1vw);
+}
 
+@media only screen and (max-width: 1000px) {
+    #pComponents {
+        opacity: 0.15
+    }
+}
 /*# sourceMappingURL=styles.css.map */
