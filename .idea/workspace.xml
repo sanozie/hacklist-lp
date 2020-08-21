@@ -20,11 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25e78933-c6cb-4245-8228-6a714bbc0676" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Assets/Designs/Design.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Assets/Designs/submission.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/ContactBack.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/Hack Nights.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/Hack Nights.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/Hero Section.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/Hero Section.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/HeroSectionBack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/HeroSectionBack.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/Moon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/Moon.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/Project Board Components.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/ProjectBoardBack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/ProjectBoardBack.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgs/Backgrounds/landingpage.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +81,7 @@
       <updated>1597938885033</updated>
       <workItem from="1597938887646" duration="924000" />
       <workItem from="1597939817384" duration="190000" />
+      <workItem from="1598023043010" duration="97000" />
     </task>
     <servers />
   </component>
@@ -93,6 +105,10 @@
       <screen x="25" y="23" width="1415" height="877" />
     </state>
     <state x="197" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/25.23.1415.877/1440.-845.1920.1057@25.23.1415.877" timestamp="1597938969625" />
+    <state x="453" y="261" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598023105922">
+      <screen x="25" y="23" width="1415" height="877" />
+    </state>
+    <state x="453" y="261" key="#com.intellij.fileTypes.FileTypeChooser/25.23.1415.877/1440.-845.1920.1057@25.23.1415.877" timestamp="1598023105922" />
     <state width="1258" height="348" key="GridCell.Tab.0.bottom" timestamp="1597940007776">
       <screen x="1440" y="-845" width="1920" height="1057" />
     </state>
@@ -155,7 +171,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/index.html</url>
-          <line>30</line>
+          <line>24</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
