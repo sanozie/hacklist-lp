@@ -335,6 +335,11 @@ body {
 .footer-col p {
     color: white;
     display: inline;
+    font-size: 1.1rem;
+}
+
+.footer-col-left {
+    border-right: 1px solid white;
 }
 
 #sent-form {
