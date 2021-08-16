@@ -232,7 +232,7 @@ body {
 }
 
 #hero-back img {
-    width: 1536px;
+    width: 100%;
 }
 .hero-banner-right:before {
     border-top-left-radius: 10px;
