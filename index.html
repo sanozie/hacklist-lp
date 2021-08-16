@@ -31,16 +31,14 @@
 <body>
     <nav class="navbar fixed-top px-md-5 position-relative d-none d-md-flex" style="mix-blend-mode: luminosity">
         <h5 id="navlogo" class="d-none d-md-flex mr-md-auto" style="color: rgb(87, 87, 87)">HACKLIST</h5>
-        <a href="https://gmail.us4.list-manage.com/subscribe?u=10220f4953ebea0edf51592fb&id=e01dbaccaa">
-            <button class="btn signup" style="color: rgb(87, 87, 87)">SIGN UP</button>
-        </a>
+        <button class="btn signup" style="color: rgb(87, 87, 87)">SIGN UP</button>
         <a href="https://app.hacklist.co">
-            <button class="btn signup" style="color: rgb(87, 87, 87)" disabled>LOG IN</button>
+            <button class="btn" style="color: rgb(87, 87, 87)" disabled>LOG IN</button>
         </a>
     </nav>
     <div id="blur" class="inactive-blur">
         <div id="hero-back" class="container-fluid position-relative">
-            <div id="hero-back-container position-absolute">
+            <div id="hero-back-container">
                 <img id="hero-back-image" src="imgs/Backgrounds/Landing.svg" alt="Alt Text!">
             </div>
             <div id="hero" class="container-fluid position-absolute center-container-nm">
@@ -85,7 +83,7 @@
                         <img  src="imgs/Assets/Designs/Project%20Board%20Components.png" alt="Project Board Components">
                     </picture>
                 </div>
-                <div id="project-text-container" class="col-xl-6 ml-auto center-container position-absolute" >
+                <div id="project-text-container" class="col-lg-6 ml-auto center-container position-absolute" >
                     <div class="center-env text-right text-center text-lg-right pr-lg-5 px-0 px-sm-0 px-lg-0 mx-0 mx-sm-5 mx-lg-0">
                         <h1 class='banner-text'>YOUR IDEAS, <br/>REALIZED</h1>
                         <p><span class='enphasis'>No experience? No problem.</span> Skill is no longer a barrier. Work with eager students to prototype your dream product <span class='enphasis'>without sacrificing ownership of your idea.</span>
@@ -164,17 +162,17 @@
                                 <h3 class="text-dark">Samuel Anozie</h3>
                                 <p class="text-dark">Product Development</p>
                                 <div class="row prof-icon-row">
-                                    <div class="col-md-2 col-3 center-container-nm">
+                                    <div class="col-lg-2 col-3 center-container-nm">
                                         <a href="http://linkedin.com/in/samanozie">
                                             <img class="img-fluid profile-icon" src="imgs/Assets/Icons/linkedin.svg" alt="LinkedIn link" />
                                         </a>
                                     </div>
-                                    <div class="col-md-2 col-3 center-container-nm">
+                                    <div class="col-lg-2 col-3 center-container-nm">
                                         <a href="http://github.com/sanozie">
                                             <img class="img-fluid profile-icon" src="imgs/Assets/Icons/github.svg" alt="github link" />
                                         </a>
                                     </div>
-                                    <div class="col-md-2 col-3 center-container-nm">
+                                    <div class="col-lg-2 col-3 center-container-nm">
                                         <a href="mailto:sanoziec@gmail.com">
                                             <img class="img-fluid profile-icon" src="imgs/Assets/Icons/mail.svg" alt="Mail icon" />
                                         </a>
@@ -203,13 +201,13 @@
     //Showing and closing form on click
     document.querySelectorAll('.signup').forEach(item => {
         item.addEventListener('click', () => {
-            window.location.href = 'https://gmail.us4.list-manage.com/subscribe?u=10220f4953ebea0edf51592fb&id=e01dbaccaa'
+            window.open('https://gmail.us4.list-manage.com/subscribe?u=10220f4953ebea0edf51592fb&id=e01dbaccaa', '_blank')
         })
     })
 
     document.querySelectorAll('.slack').forEach(item => {
         item.addEventListener('click', () => {
-            window.location.href = 'https://join.slack.com/t/hacklistworkspace/shared_invite/zt-uhfdw4qs-xfqJej0fOsd7tX86ycmv_g'
+            window.open('https://join.slack.com/t/hacklistworkspace/shared_invite/zt-uhfdw4qs-xfqJej0fOsd7tX86ycmv_g', '_blank')
         })
     })
 
