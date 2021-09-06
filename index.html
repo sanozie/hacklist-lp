@@ -36,9 +36,9 @@
 <body>
     <nav class="navbar fixed-top px-md-5 position-relative d-none d-md-flex" style="mix-blend-mode: luminosity">
         <h5 id="navlogo" class="d-none d-md-flex mr-md-auto" style="color: rgb(87, 87, 87)">HACKLIST</h5>
-        <button class="btn signup" style="color: rgb(87, 87, 87)">SIGN UP</button>
+        <button class="btn signup" style="color: rgb(87, 87, 87)" data-banner="signup">SIGN UP</button>
         <a href="https://app.hacklist.co">
-            <button class="btn" style="color: rgb(87, 87, 87)">LOG IN</button>
+            <button class="btn" style="color: rgb(87, 87, 87)" data-banner="login">LOG IN</button>
         </a>
     </nav>
     <div id="blur" class="inactive-blur">
@@ -57,7 +57,7 @@
                         <div class="center-env text-center">
                             <h1 class='banner-text'>WE PUT SKILLS AND IDEAS TOGETHER</h1>
                             <p class='banner-text'>To host our never-ending hackathon.</p>
-                            <button class="btn btn-mobile signup">JOIN HACKLIST</button>
+                            <button class="btn btn-mobile app" data-banner="hero">JOIN HACKLIST</button>
                         </div>
                     </div>
                     <div class="col-md-3 d-none d-md-flex center-container">
@@ -74,8 +74,8 @@
                 <div class="col-12 text-center justify-content-center">
                     <h1>BOLSTER YOUR RESUME<br/>IN DAYS, NOT MONTHS</h1>
                     <p class=''>Gain skills in the process. Finish up with a prototype you’ll be proud of.</p>
-                    <button class="btn btn-lighter signup d-none d-md-inline-block">JOIN HACKLIST</button>
-                    <button class="btn btn-mobile signup d-inline-block d-md-none">JOIN HACKLIST</button>
+                    <button class="btn btn-lighter app d-none d-md-inline-block" data-banner="resume">JOIN HACKLIST</button>
+                    <button class="btn btn-mobile app d-inline-block d-md-none" data-banner="resume">JOIN HACKLIST</button>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                         <h1 class='banner-text'>YOUR IDEAS, <br/>REALIZED</h1>
                         <p><span class='enphasis'>No experience? No problem.</span> Work with eager students to prototype your dream product <span class='enphasis'>without sacrificing ownership of your idea.</span>
                             <br/><span class="enphasis">Launching Beta Fall 2021.</span></p>
-                        <button class="btn btn-darker signup">JOIN HACKLIST</button>
+                        <button class="btn btn-darker app" data-banner="idea">JOIN HACKLIST</button>
                     </div>
                 </div>
             </div>
@@ -114,8 +114,8 @@
                         <p class="text-light">Is your friend’s shower-epiphany idea not cutting it? No worries. Find the project you’ll be passionate about with our filtering features.
                             <span class="enphasis">Launching Beta Fall 2021.</span><br/>
                             <br/>
-                        <button class="btn btn-lighter signup d-none d-md-inline-block">JOIN HACKLIST</button>
-                        <button class="btn btn-mobile signup d-inline-block d-md-none">JOIN HACKLIST</button>
+                        <button class="btn btn-lighter app d-none d-md-inline-block" data-banner="slack">JOIN HACKLIST</button>
+                        <button class="btn btn-mobile app d-inline-block d-md-none" data-banner="slack">JOIN HACKLIST</button>
                     </div>
                 </div>
                 <div class="col-md-6 text-center">
@@ -131,8 +131,8 @@
                 <div class="col-md-5 text-center">
                     <h1>JOIN THE <br/> ONLINE COMMUNITY </h1>
                     <p class="text-light">We’ve got a Slack! Have fun with fellow creators, entrepreneurs, and future billionaires. Keep watch for your welcome email.</p>
-                    <button class="btn btn-lighter slack d-none d-md-inline-block">JOIN SLACK</button>
-                    <button class="btn btn-mobile slack d-inline-block d-md-none">JOIN SLACK</button>
+                    <button class="btn btn-lighter slack d-none d-md-inline-block" data-banner="slack">JOIN SLACK</button>
+                    <button class="btn btn-mobile slack d-inline-block d-md-none" data-banner="slack">JOIN SLACK</button>
                 </div>
             </div>
             <div id="slack-svg-div" class="row justify-content-center">
@@ -209,15 +209,31 @@
     </div>
     <script>
     //Showing and closing form on click
+    function logBannerClick(banner) {
+        console.log(banner)
+        gtag('event', 'banner_click', {
+            'banner': banner
+        });
+    }
+
     document.querySelectorAll('.signup').forEach(item => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', el => {
+            logBannerClick(el.target.dataset.banner)
             window.open('https://gmail.us4.list-manage.com/subscribe?u=10220f4953ebea0edf51592fb&id=e01dbaccaa', '_blank')
         })
     })
 
     document.querySelectorAll('.slack').forEach(item => {
-        item.addEventListener('click', () => {
+        item.addEventListener('click', el => {
+            logBannerClick(el.target.dataset.banner)
             window.open('https://join.slack.com/t/hacklistapp/shared_invite/zt-uhfdw4qs-xfqJej0fOsd7tX86ycmv_g', '_blank')
+        })
+    })
+
+    document.querySelectorAll('.app').forEach(item => {
+        item.addEventListener('click', el => {
+            logBannerClick(el.target.dataset.banner)
+            window.open('https://app.hacklist.co', '_blank')
         })
     })
 
